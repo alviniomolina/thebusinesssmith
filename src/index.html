@@ -7,37 +7,35 @@
 		<link href="styles.css" rel="stylesheet">
 		<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 	</head>
-  <body class="bg-black" data-spy="scrollTop" data-target=".nav">
+	<body class="bg-black" id="top">
 	
 	<!-- Navigation-->
-	<nav class="flex flex-col text-center sm:justify-between sm:flex-row  sm:text-left sm:items-baseline sticky pin-t pin-l bg-black opacity-75 shadow py-4 px-6 " data-scroll-header>
+	<div class="flex flex-col text-center sm:justify-between sm:flex-row  sm:text-left sm:items-baseline sticky pin-t pin-l bg-black opacity-75 shadow py-4 px-6">
 		
 		<!-- Logo -->
 		<div class="mb-2 sm:mb-0">
-			<a class="text-purple hover:text-green font-bold text-2xl no-underline" href="/home">theBusinessSmith</a>
+			<a class="text-purple hover:text-green font-bold text-2xl no-underline" href="#top">theBusinessSmith</a>
 		</div>
 
 		<!-- Hamburger Menu -->
-		<div class="block md:hidden">
-			<button class="flex items-center text-purple border-purple hover:text-green hover:border-green">
-				<svg class="fill-current h-3 w-1" viewBox="0 0 10 10" ><title></title><i class="fas fa-bars fa-lg mx-auto"></i></svg>
-			</button>
+		<div class="md:hidden pr-3" id="mobile-nav-trigger">
+			<div class="toggle p-2 block"><span></span></div>
 		</div>
 		
 		<!-- Navigatie Items-->
-		<div class="static">
-			<a class="border-t md:border-0 block md:inline no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green text-lg" href="#what">what</a>
-			<a class="border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#why">why</a>
-			<a class="border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#when">when</a>
-			<a class="border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#who">who</a>
-			<a class="border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#how">how</a>
-			<a class="border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#">highlights</a>
-			<a class="border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#">testimonials</a>
-			<a class="border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#">about</a>
-			<a class="border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#">contact</a>
+		<nav class="relative">
+			<a class="data-scroll border-t md:border-0 block md:inline no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green text-lg" href="#what">what</a>
+			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#why">why</a>
+			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#when">when</a>
+			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#who">who</a>
+			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#how">how</a>
+			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#">highlights</a>
+			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#">testimonials</a>
+			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#">about</a>
+			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#">contact</a>
 
-		</div>
-	</nav>
+		</nav>
+	</div>
 
     <!-- Hero-->
     <div class="min-h-screen flex items-center justify-center" id="hero">
@@ -104,45 +102,16 @@
 		</p>
 	</section>
     
-  <script type="text/javascript" src="main.js"></script>
-  <script>
-  // Select all links with hashes
-  $('a[href*="#"]')
-	// Remove links that don't actually link to anything
-	.not('[href="#"]')
-	.not('[href="#0"]')
-	.click(function(event) {
-	  // On-page links
-	  if (
-		location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-		&& 
-		location.hostname == this.hostname
-	  ) {
-		// Figure out element to scroll to
-		var target = $(this.hash);
-		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		// Does a scroll target exist?
-		if (target.length) {
-		  // Only prevent default if animation is actually gonna happen
-		  event.preventDefault();
-		  $('html, body').animate({
-			scrollTop: target.offset().top
-		  }, 1000, function() {
-			// Callback after animation
-			// Must change focus!
-			var $target = $(target);
-			$target.focus();
-			if ($target.is(":focus")) { // Checking if the target was focused
-			  return false;
-			} else {
-			  $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-			  $target.focus(); // Set focus again
-			};
-		  });
-		}
-	  }
-	});
+	<script type="text/javascript" src="main.js"></script>
+	<script src="app.js" async defer></script>
+	<script src="/assets/smooth-scroll-master/dist/smooth-scroll.polyfills.js"></script>
+	
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]', {
+			speed: 1500
+		});
 	</script>
+
 
 </body>
 

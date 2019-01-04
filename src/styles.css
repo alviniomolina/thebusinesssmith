@@ -3,3 +3,47 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.toggle {
+    position: relative;
+  }
+  
+  .toggle span,
+  .toggle span:before,
+  .toggle span:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 18px;
+    border-radius: 2px;
+    background: white;
+    display: block;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    right: 0;
+  }
+  
+  .toggle span:before {
+    top: -6px;
+  }
+  
+  .toggle span:after {
+    bottom: -6px;
+  }
+  
+  .toggle.open span {
+    background-color: transparent;
+  }
+  
+  .toggle.open span:before,
+  .toggle.open span:after {
+    top: 0;
+  }
+  
+  .toggle.open span:before {
+    transform: rotate(45deg);
+  }
+  
+  .toggle.open span:after {
+    transform: rotate(-45deg);
+  }
