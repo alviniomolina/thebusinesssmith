@@ -650,7 +650,7 @@ table {
 
 .label {
   width: 100%;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -669,13 +669,13 @@ table {
 }
 
 .label:active {
-  background-color: #dae1e7;
+  background-color: transparent;
 }
 
-.input:focus + .label {
+/*.input:focus + .label {
   box-shadow: inset 0px 0px 0px 3px #2aa1c0;
   z-index: 1;
-}
+}*/
 
 .input:checked + .label {
   background-color: transparent;
