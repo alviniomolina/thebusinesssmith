@@ -1,3 +1,12 @@
+:root {
+  --black-d: #0c0c0c;
+  --blue-d: #4f1aff;
+}
+
+/*==============================================
+ Preflight : node_modules/tailwindcss/css/preflight.css
+ ===============================================*/
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -543,7 +552,7 @@ ul {
 *::after {
   border-width: 0;
   border-style: solid;
-  border-color: #dae1e7;
+  border-color: currentColor;
 }
 
 /**
@@ -605,6 +614,78 @@ table {
   border-collapse: collapse;
 }
 
+html {
+  font-family: 'Sarabun', 'Open Sans' sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Sarabun', sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1.25rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: .875rem;
+}
+
+h6 {
+  font-size: .875rem;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+/*==============================================
+ Components
+ ===============================================*/
+
 .container {
   width: 100%;
 }
@@ -632,6 +713,38 @@ table {
     max-width: 1200px;
   }
 }
+
+/*==============================================
+// 1. General Layout
+*/
+
+/*==============================================
+// 2. Naviagtion
+*/
+
+/*==============================================
+// 3. Why
+*/
+
+/*==============================================
+// 4. How
+*/
+
+/*==============================================
+// 5. What
+*/
+
+/*==============================================
+// 6. Testimonials
+*/
+
+/*==============================================
+// 7. Contact
+*/
+
+/*==============================================
+// 8. Footer
+*/
 
 .tabs {
   width: 100%;
@@ -708,6 +821,10 @@ table {
 .input:checked + .label + .panel {
   display: block;
 }
+
+/*==============================================
+ Utilities
+ ===============================================*/
 
 .list-reset {
   list-style: none;
@@ -1375,330 +1492,6 @@ table {
 }
 
 .hover\:bg-pink-lightest:hover {
-  background-color: #ffebef;
-}
-
-.active\:bg-transparent:active {
-  background-color: transparent;
-}
-
-.active\:bg-black-doubledeep:active {
-  background-color: #22292f;
-}
-
-.active\:bg-black-deep:active {
-  background-color: #22292f;
-}
-
-.active\:bg-black-base:active {
-  background-color: #22292f;
-}
-
-.active\:bg-black-light:active {
-  background-color: #22292f;
-}
-
-.active\:bg-black-doublelight:active {
-  background-color: #22292f;
-}
-
-.active\:bg-darkblue:active {
-  background-color: #222c2f;
-}
-
-.active\:bg-darkgreen:active {
-  background-color: ##222F2F;
-}
-
-.active\:bg-darkred:active {
-  background-color: #2f2224;
-}
-
-.active\:bg-black:active {
-  background-color: #22292f;
-}
-
-.active\:bg-grey-darkest:active {
-  background-color: #3d4852;
-}
-
-.active\:bg-grey-darker:active {
-  background-color: #606f7b;
-}
-
-.active\:bg-grey-dark:active {
-  background-color: #8795a1;
-}
-
-.active\:bg-grey:active {
-  background-color: #b8c2cc;
-}
-
-.active\:bg-grey-light:active {
-  background-color: #dae1e7;
-}
-
-.active\:bg-grey-lighter:active {
-  background-color: #f1f5f8;
-}
-
-.active\:bg-grey-lightest:active {
-  background-color: #f8fafc;
-}
-
-.active\:bg-white:active {
-  background-color: #fff;
-}
-
-.active\:bg-red-darkest:active {
-  background-color: #3b0d0c;
-}
-
-.active\:bg-red-darker:active {
-  background-color: #621b18;
-}
-
-.active\:bg-red-dark:active {
-  background-color: #cc1f1a;
-}
-
-.active\:bg-red:active {
-  background-color: #e3342f;
-}
-
-.active\:bg-red-light:active {
-  background-color: #ef5753;
-}
-
-.active\:bg-red-lighter:active {
-  background-color: #f9acaa;
-}
-
-.active\:bg-red-lightest:active {
-  background-color: #fcebea;
-}
-
-.active\:bg-orange-darkest:active {
-  background-color: #462a16;
-}
-
-.active\:bg-orange-darker:active {
-  background-color: #613b1f;
-}
-
-.active\:bg-orange-dark:active {
-  background-color: #de751f;
-}
-
-.active\:bg-orange:active {
-  background-color: #f6993f;
-}
-
-.active\:bg-orange-light:active {
-  background-color: #faad63;
-}
-
-.active\:bg-orange-lighter:active {
-  background-color: #fcd9b6;
-}
-
-.active\:bg-orange-lightest:active {
-  background-color: #fff5eb;
-}
-
-.active\:bg-yellow-darkest:active {
-  background-color: #453411;
-}
-
-.active\:bg-yellow-darker:active {
-  background-color: #684f1d;
-}
-
-.active\:bg-yellow-dark:active {
-  background-color: #f2d024;
-}
-
-.active\:bg-yellow:active {
-  background-color: #ffed4a;
-}
-
-.active\:bg-yellow-light:active {
-  background-color: #fff382;
-}
-
-.active\:bg-yellow-lighter:active {
-  background-color: #fff9c2;
-}
-
-.active\:bg-yellow-lightest:active {
-  background-color: #fcfbeb;
-}
-
-.active\:bg-green-darkest:active {
-  background-color: #0f2f21;
-}
-
-.active\:bg-green-darker:active {
-  background-color: #1a4731;
-}
-
-.active\:bg-green-dark:active {
-  background-color: #1f9d55;
-}
-
-.active\:bg-green:active {
-  background-color: #38c172;
-}
-
-.active\:bg-green-light:active {
-  background-color: #51d88a;
-}
-
-.active\:bg-green-lighter:active {
-  background-color: #a2f5bf;
-}
-
-.active\:bg-green-lightest:active {
-  background-color: #e3fcec;
-}
-
-.active\:bg-teal-darkest:active {
-  background-color: #0d3331;
-}
-
-.active\:bg-teal-darker:active {
-  background-color: #20504f;
-}
-
-.active\:bg-teal-dark:active {
-  background-color: #38a89d;
-}
-
-.active\:bg-teal:active {
-  background-color: #4dc0b5;
-}
-
-.active\:bg-teal-light:active {
-  background-color: #64d5ca;
-}
-
-.active\:bg-teal-lighter:active {
-  background-color: #a0f0ed;
-}
-
-.active\:bg-teal-lightest:active {
-  background-color: #e8fffe;
-}
-
-.active\:bg-blue-darkest:active {
-  background-color: #12283a;
-}
-
-.active\:bg-blue-darker:active {
-  background-color: #1c3d5a;
-}
-
-.active\:bg-blue-dark:active {
-  background-color: #2779bd;
-}
-
-.active\:bg-blue:active {
-  background-color: #3490dc;
-}
-
-.active\:bg-blue-light:active {
-  background-color: #6cb2eb;
-}
-
-.active\:bg-blue-lighter:active {
-  background-color: #bcdefa;
-}
-
-.active\:bg-blue-lightest:active {
-  background-color: #eff8ff;
-}
-
-.active\:bg-indigo-darkest:active {
-  background-color: #191e38;
-}
-
-.active\:bg-indigo-darker:active {
-  background-color: #2f365f;
-}
-
-.active\:bg-indigo-dark:active {
-  background-color: #5661b3;
-}
-
-.active\:bg-indigo:active {
-  background-color: #6574cd;
-}
-
-.active\:bg-indigo-light:active {
-  background-color: #7886d7;
-}
-
-.active\:bg-indigo-lighter:active {
-  background-color: #b2b7ff;
-}
-
-.active\:bg-indigo-lightest:active {
-  background-color: #e6e8ff;
-}
-
-.active\:bg-purple-darkest:active {
-  background-color: #21183c;
-}
-
-.active\:bg-purple-darker:active {
-  background-color: #382b5f;
-}
-
-.active\:bg-purple-dark:active {
-  background-color: #794acf;
-}
-
-.active\:bg-purple:active {
-  background-color: #9561e2;
-}
-
-.active\:bg-purple-light:active {
-  background-color: #a779e9;
-}
-
-.active\:bg-purple-lighter:active {
-  background-color: #d6bbfc;
-}
-
-.active\:bg-purple-lightest:active {
-  background-color: #f3ebff;
-}
-
-.active\:bg-pink-darkest:active {
-  background-color: #451225;
-}
-
-.active\:bg-pink-darker:active {
-  background-color: #6f213f;
-}
-
-.active\:bg-pink-dark:active {
-  background-color: #eb5286;
-}
-
-.active\:bg-pink:active {
-  background-color: #f66d9b;
-}
-
-.active\:bg-pink-light:active {
-  background-color: #fa7ea8;
-}
-
-.active\:bg-pink-lighter:active {
-  background-color: #ffbbca;
-}
-
-.active\:bg-pink-lightest:active {
   background-color: #ffebef;
 }
 
@@ -2422,330 +2215,6 @@ table {
   border-color: #ffebef;
 }
 
-.active\:border-transparent:active {
-  border-color: transparent;
-}
-
-.active\:border-black-doubledeep:active {
-  border-color: #22292f;
-}
-
-.active\:border-black-deep:active {
-  border-color: #22292f;
-}
-
-.active\:border-black-base:active {
-  border-color: #22292f;
-}
-
-.active\:border-black-light:active {
-  border-color: #22292f;
-}
-
-.active\:border-black-doublelight:active {
-  border-color: #22292f;
-}
-
-.active\:border-darkblue:active {
-  border-color: #222c2f;
-}
-
-.active\:border-darkgreen:active {
-  border-color: ##222F2F;
-}
-
-.active\:border-darkred:active {
-  border-color: #2f2224;
-}
-
-.active\:border-black:active {
-  border-color: #22292f;
-}
-
-.active\:border-grey-darkest:active {
-  border-color: #3d4852;
-}
-
-.active\:border-grey-darker:active {
-  border-color: #606f7b;
-}
-
-.active\:border-grey-dark:active {
-  border-color: #8795a1;
-}
-
-.active\:border-grey:active {
-  border-color: #b8c2cc;
-}
-
-.active\:border-grey-light:active {
-  border-color: #dae1e7;
-}
-
-.active\:border-grey-lighter:active {
-  border-color: #f1f5f8;
-}
-
-.active\:border-grey-lightest:active {
-  border-color: #f8fafc;
-}
-
-.active\:border-white:active {
-  border-color: #fff;
-}
-
-.active\:border-red-darkest:active {
-  border-color: #3b0d0c;
-}
-
-.active\:border-red-darker:active {
-  border-color: #621b18;
-}
-
-.active\:border-red-dark:active {
-  border-color: #cc1f1a;
-}
-
-.active\:border-red:active {
-  border-color: #e3342f;
-}
-
-.active\:border-red-light:active {
-  border-color: #ef5753;
-}
-
-.active\:border-red-lighter:active {
-  border-color: #f9acaa;
-}
-
-.active\:border-red-lightest:active {
-  border-color: #fcebea;
-}
-
-.active\:border-orange-darkest:active {
-  border-color: #462a16;
-}
-
-.active\:border-orange-darker:active {
-  border-color: #613b1f;
-}
-
-.active\:border-orange-dark:active {
-  border-color: #de751f;
-}
-
-.active\:border-orange:active {
-  border-color: #f6993f;
-}
-
-.active\:border-orange-light:active {
-  border-color: #faad63;
-}
-
-.active\:border-orange-lighter:active {
-  border-color: #fcd9b6;
-}
-
-.active\:border-orange-lightest:active {
-  border-color: #fff5eb;
-}
-
-.active\:border-yellow-darkest:active {
-  border-color: #453411;
-}
-
-.active\:border-yellow-darker:active {
-  border-color: #684f1d;
-}
-
-.active\:border-yellow-dark:active {
-  border-color: #f2d024;
-}
-
-.active\:border-yellow:active {
-  border-color: #ffed4a;
-}
-
-.active\:border-yellow-light:active {
-  border-color: #fff382;
-}
-
-.active\:border-yellow-lighter:active {
-  border-color: #fff9c2;
-}
-
-.active\:border-yellow-lightest:active {
-  border-color: #fcfbeb;
-}
-
-.active\:border-green-darkest:active {
-  border-color: #0f2f21;
-}
-
-.active\:border-green-darker:active {
-  border-color: #1a4731;
-}
-
-.active\:border-green-dark:active {
-  border-color: #1f9d55;
-}
-
-.active\:border-green:active {
-  border-color: #38c172;
-}
-
-.active\:border-green-light:active {
-  border-color: #51d88a;
-}
-
-.active\:border-green-lighter:active {
-  border-color: #a2f5bf;
-}
-
-.active\:border-green-lightest:active {
-  border-color: #e3fcec;
-}
-
-.active\:border-teal-darkest:active {
-  border-color: #0d3331;
-}
-
-.active\:border-teal-darker:active {
-  border-color: #20504f;
-}
-
-.active\:border-teal-dark:active {
-  border-color: #38a89d;
-}
-
-.active\:border-teal:active {
-  border-color: #4dc0b5;
-}
-
-.active\:border-teal-light:active {
-  border-color: #64d5ca;
-}
-
-.active\:border-teal-lighter:active {
-  border-color: #a0f0ed;
-}
-
-.active\:border-teal-lightest:active {
-  border-color: #e8fffe;
-}
-
-.active\:border-blue-darkest:active {
-  border-color: #12283a;
-}
-
-.active\:border-blue-darker:active {
-  border-color: #1c3d5a;
-}
-
-.active\:border-blue-dark:active {
-  border-color: #2779bd;
-}
-
-.active\:border-blue:active {
-  border-color: #3490dc;
-}
-
-.active\:border-blue-light:active {
-  border-color: #6cb2eb;
-}
-
-.active\:border-blue-lighter:active {
-  border-color: #bcdefa;
-}
-
-.active\:border-blue-lightest:active {
-  border-color: #eff8ff;
-}
-
-.active\:border-indigo-darkest:active {
-  border-color: #191e38;
-}
-
-.active\:border-indigo-darker:active {
-  border-color: #2f365f;
-}
-
-.active\:border-indigo-dark:active {
-  border-color: #5661b3;
-}
-
-.active\:border-indigo:active {
-  border-color: #6574cd;
-}
-
-.active\:border-indigo-light:active {
-  border-color: #7886d7;
-}
-
-.active\:border-indigo-lighter:active {
-  border-color: #b2b7ff;
-}
-
-.active\:border-indigo-lightest:active {
-  border-color: #e6e8ff;
-}
-
-.active\:border-purple-darkest:active {
-  border-color: #21183c;
-}
-
-.active\:border-purple-darker:active {
-  border-color: #382b5f;
-}
-
-.active\:border-purple-dark:active {
-  border-color: #794acf;
-}
-
-.active\:border-purple:active {
-  border-color: #9561e2;
-}
-
-.active\:border-purple-light:active {
-  border-color: #a779e9;
-}
-
-.active\:border-purple-lighter:active {
-  border-color: #d6bbfc;
-}
-
-.active\:border-purple-lightest:active {
-  border-color: #f3ebff;
-}
-
-.active\:border-pink-darkest:active {
-  border-color: #451225;
-}
-
-.active\:border-pink-darker:active {
-  border-color: #6f213f;
-}
-
-.active\:border-pink-dark:active {
-  border-color: #eb5286;
-}
-
-.active\:border-pink:active {
-  border-color: #f66d9b;
-}
-
-.active\:border-pink-light:active {
-  border-color: #fa7ea8;
-}
-
-.active\:border-pink-lighter:active {
-  border-color: #ffbbca;
-}
-
-.active\:border-pink-lightest:active {
-  border-color: #ffebef;
-}
-
 .rounded-none {
   border-radius: 0;
 }
@@ -2760,6 +2229,14 @@ table {
 
 .rounded-lg {
   border-radius: .5rem;
+}
+
+.rounded-xl {
+  border-radius: .75rem;
+}
+
+.rounded-xxl {
+  border-radius: 1rem;
 }
 
 .rounded-full {
@@ -2846,6 +2323,46 @@ table {
   border-bottom-left-radius: .5rem;
 }
 
+.rounded-t-xl {
+  border-top-left-radius: .75rem;
+  border-top-right-radius: .75rem;
+}
+
+.rounded-r-xl {
+  border-top-right-radius: .75rem;
+  border-bottom-right-radius: .75rem;
+}
+
+.rounded-b-xl {
+  border-bottom-right-radius: .75rem;
+  border-bottom-left-radius: .75rem;
+}
+
+.rounded-l-xl {
+  border-top-left-radius: .75rem;
+  border-bottom-left-radius: .75rem;
+}
+
+.rounded-t-xxl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.rounded-r-xxl {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.rounded-b-xxl {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.rounded-l-xxl {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
 .rounded-t-full {
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
@@ -2930,6 +2447,38 @@ table {
   border-bottom-left-radius: .5rem;
 }
 
+.rounded-tl-xl {
+  border-top-left-radius: .75rem;
+}
+
+.rounded-tr-xl {
+  border-top-right-radius: .75rem;
+}
+
+.rounded-br-xl {
+  border-bottom-right-radius: .75rem;
+}
+
+.rounded-bl-xl {
+  border-bottom-left-radius: .75rem;
+}
+
+.rounded-tl-xxl {
+  border-top-left-radius: 1rem;
+}
+
+.rounded-tr-xxl {
+  border-top-right-radius: 1rem;
+}
+
+.rounded-br-xxl {
+  border-bottom-right-radius: 1rem;
+}
+
+.rounded-bl-xxl {
+  border-bottom-left-radius: 1rem;
+}
+
 .rounded-tl-full {
   border-top-left-radius: 9999px;
 }
@@ -2970,8 +2519,16 @@ table {
   border-width: 2px;
 }
 
+.border-3 {
+  border-width: 3px;
+}
+
 .border-4 {
   border-width: 4px;
+}
+
+.border-6 {
+  border-width: 6px;
 }
 
 .border-8 {
@@ -3014,6 +2571,22 @@ table {
   border-left-width: 2px;
 }
 
+.border-t-3 {
+  border-top-width: 3px;
+}
+
+.border-r-3 {
+  border-right-width: 3px;
+}
+
+.border-b-3 {
+  border-bottom-width: 3px;
+}
+
+.border-l-3 {
+  border-left-width: 3px;
+}
+
 .border-t-4 {
   border-top-width: 4px;
 }
@@ -3028,6 +2601,22 @@ table {
 
 .border-l-4 {
   border-left-width: 4px;
+}
+
+.border-t-6 {
+  border-top-width: 6px;
+}
+
+.border-r-6 {
+  border-right-width: 6px;
+}
+
+.border-b-6 {
+  border-bottom-width: 6px;
+}
+
+.border-l-6 {
+  border-left-width: 6px;
 }
 
 .border-t-8 {
@@ -3281,11 +2870,11 @@ table {
 }
 
 .font-sans {
-  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Open Sans, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .font-serif {
-  font-family: Georgia, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, serif;
+  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
 }
 
 .font-mono {
@@ -3364,42 +2953,6 @@ table {
   font-weight: 900;
 }
 
-.active\:font-hairline:active {
-  font-weight: 100;
-}
-
-.active\:font-thin:active {
-  font-weight: 200;
-}
-
-.active\:font-light:active {
-  font-weight: 300;
-}
-
-.active\:font-normal:active {
-  font-weight: 400;
-}
-
-.active\:font-medium:active {
-  font-weight: 500;
-}
-
-.active\:font-semibold:active {
-  font-weight: 600;
-}
-
-.active\:font-bold:active {
-  font-weight: 700;
-}
-
-.active\:font-extrabold:active {
-  font-weight: 800;
-}
-
-.active\:font-black:active {
-  font-weight: 900;
-}
-
 .h-1 {
   height: .25rem;
 }
@@ -3448,8 +3001,20 @@ table {
   height: 12rem;
 }
 
+.h-50 {
+  height: 50vh;
+}
+
 .h-64 {
   height: 16rem;
+}
+
+.h-70 {
+  height: 70vh;
+}
+
+.h-80 {
+  height: 80vh;
 }
 
 .h-90 {
@@ -3466,6 +3031,14 @@ table {
 
 .h-full {
   height: 100%;
+}
+
+.h-1\/3 {
+  height: 33.3vh;
+}
+
+.h-2\/3 {
+  height: 66.6vh;
 }
 
 .h-screen {
@@ -3514,6 +3087,30 @@ table {
 
 .m-8 {
   margin: 2rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
+}
+
+.m-12 {
+  margin: 3rem;
+}
+
+.m-14 {
+  margin: 3, 5rem;
+}
+
+.m-16 {
+  margin: 4rem;
+}
+
+.m-18 {
+  margin: 4, 5rem;
+}
+
+.m-20 {
+  margin: 5rem;
 }
 
 .m-auto {
@@ -3592,6 +3189,66 @@ table {
 .mx-8 {
   margin-left: 2rem;
   margin-right: 2rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.my-14 {
+  margin-top: 3, 5rem;
+  margin-bottom: 3, 5rem;
+}
+
+.mx-14 {
+  margin-left: 3, 5rem;
+  margin-right: 3, 5rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.my-18 {
+  margin-top: 4, 5rem;
+  margin-bottom: 4, 5rem;
+}
+
+.mx-18 {
+  margin-left: 4, 5rem;
+  margin-right: 4, 5rem;
+}
+
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .my-auto {
@@ -3724,6 +3381,102 @@ table {
 
 .ml-8 {
   margin-left: 2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mr-12 {
+  margin-right: 3rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
+}
+
+.mt-14 {
+  margin-top: 3, 5rem;
+}
+
+.mr-14 {
+  margin-right: 3, 5rem;
+}
+
+.mb-14 {
+  margin-bottom: 3, 5rem;
+}
+
+.ml-14 {
+  margin-left: 3, 5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mr-16 {
+  margin-right: 4rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
+}
+
+.mt-18 {
+  margin-top: 4, 5rem;
+}
+
+.mr-18 {
+  margin-right: 4, 5rem;
+}
+
+.mb-18 {
+  margin-bottom: 4, 5rem;
+}
+
+.ml-18 {
+  margin-left: 4, 5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mr-20 {
+  margin-right: 5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
 }
 
 .mt-auto {
@@ -4178,8 +3931,36 @@ table {
   padding: 2rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-12 {
+  padding: 3rem;
+}
+
+.p-14 {
+  padding: 3, 5rem;
+}
+
+.p-16 {
+  padding: 4rem;
+}
+
+.p-18 {
+  padding: 4, 5rem;
+}
+
+.p-20 {
+  padding: 5rem;
+}
+
 .p-px {
   padding: 1px;
+}
+
+.p-20px {
+  padding: 20px;
 }
 
 .py-0 {
@@ -4252,6 +4033,66 @@ table {
   padding-right: 2rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-14 {
+  padding-top: 3, 5rem;
+  padding-bottom: 3, 5rem;
+}
+
+.px-14 {
+  padding-left: 3, 5rem;
+  padding-right: 3, 5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.py-18 {
+  padding-top: 4, 5rem;
+  padding-bottom: 4, 5rem;
+}
+
+.px-18 {
+  padding-left: 4, 5rem;
+  padding-right: 4, 5rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .py-px {
   padding-top: 1px;
   padding-bottom: 1px;
@@ -4260,6 +4101,16 @@ table {
 .px-px {
   padding-left: 1px;
   padding-right: 1px;
+}
+
+.py-20px {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.px-20px {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .pt-0 {
@@ -4374,6 +4225,102 @@ table {
   padding-left: 2rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pr-12 {
+  padding-right: 3rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pl-12 {
+  padding-left: 3rem;
+}
+
+.pt-14 {
+  padding-top: 3, 5rem;
+}
+
+.pr-14 {
+  padding-right: 3, 5rem;
+}
+
+.pb-14 {
+  padding-bottom: 3, 5rem;
+}
+
+.pl-14 {
+  padding-left: 3, 5rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pr-16 {
+  padding-right: 4rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pl-16 {
+  padding-left: 4rem;
+}
+
+.pt-18 {
+  padding-top: 4, 5rem;
+}
+
+.pr-18 {
+  padding-right: 4, 5rem;
+}
+
+.pb-18 {
+  padding-bottom: 4, 5rem;
+}
+
+.pl-18 {
+  padding-left: 4, 5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pr-20 {
+  padding-right: 5rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pl-20 {
+  padding-left: 5rem;
+}
+
 .pt-px {
   padding-top: 1px;
 }
@@ -4388,6 +4335,22 @@ table {
 
 .pl-px {
   padding-left: 1px;
+}
+
+.pt-20px {
+  padding-top: 20px;
+}
+
+.pr-20px {
+  padding-right: 20px;
+}
+
+.pb-20px {
+  padding-bottom: 20px;
+}
+
+.pl-20px {
+  padding-left: 20px;
 }
 
 .pointer-events-none {
@@ -5174,332 +5137,12 @@ table {
   color: #ffebef;
 }
 
-.active\:text-transparent:active {
-  color: transparent;
-}
-
-.active\:text-black-doubledeep:active {
-  color: #22292f;
-}
-
-.active\:text-black-deep:active {
-  color: #22292f;
-}
-
-.active\:text-black-base:active {
-  color: #22292f;
-}
-
-.active\:text-black-light:active {
-  color: #22292f;
-}
-
-.active\:text-black-doublelight:active {
-  color: #22292f;
-}
-
-.active\:text-darkblue:active {
-  color: #222c2f;
-}
-
-.active\:text-darkgreen:active {
-  color: ##222F2F;
-}
-
-.active\:text-darkred:active {
-  color: #2f2224;
-}
-
-.active\:text-black:active {
-  color: #22292f;
-}
-
-.active\:text-grey-darkest:active {
-  color: #3d4852;
-}
-
-.active\:text-grey-darker:active {
-  color: #606f7b;
-}
-
-.active\:text-grey-dark:active {
-  color: #8795a1;
-}
-
-.active\:text-grey:active {
-  color: #b8c2cc;
-}
-
-.active\:text-grey-light:active {
-  color: #dae1e7;
-}
-
-.active\:text-grey-lighter:active {
-  color: #f1f5f8;
-}
-
-.active\:text-grey-lightest:active {
-  color: #f8fafc;
-}
-
-.active\:text-white:active {
-  color: #fff;
-}
-
-.active\:text-red-darkest:active {
-  color: #3b0d0c;
-}
-
-.active\:text-red-darker:active {
-  color: #621b18;
-}
-
-.active\:text-red-dark:active {
-  color: #cc1f1a;
-}
-
-.active\:text-red:active {
-  color: #e3342f;
-}
-
-.active\:text-red-light:active {
-  color: #ef5753;
-}
-
-.active\:text-red-lighter:active {
-  color: #f9acaa;
-}
-
-.active\:text-red-lightest:active {
-  color: #fcebea;
-}
-
-.active\:text-orange-darkest:active {
-  color: #462a16;
-}
-
-.active\:text-orange-darker:active {
-  color: #613b1f;
-}
-
-.active\:text-orange-dark:active {
-  color: #de751f;
-}
-
-.active\:text-orange:active {
-  color: #f6993f;
-}
-
-.active\:text-orange-light:active {
-  color: #faad63;
-}
-
-.active\:text-orange-lighter:active {
-  color: #fcd9b6;
-}
-
-.active\:text-orange-lightest:active {
-  color: #fff5eb;
-}
-
-.active\:text-yellow-darkest:active {
-  color: #453411;
-}
-
-.active\:text-yellow-darker:active {
-  color: #684f1d;
-}
-
-.active\:text-yellow-dark:active {
-  color: #f2d024;
-}
-
-.active\:text-yellow:active {
-  color: #ffed4a;
-}
-
-.active\:text-yellow-light:active {
-  color: #fff382;
-}
-
-.active\:text-yellow-lighter:active {
-  color: #fff9c2;
-}
-
-.active\:text-yellow-lightest:active {
-  color: #fcfbeb;
-}
-
-.active\:text-green-darkest:active {
-  color: #0f2f21;
-}
-
-.active\:text-green-darker:active {
-  color: #1a4731;
-}
-
-.active\:text-green-dark:active {
-  color: #1f9d55;
-}
-
-.active\:text-green:active {
-  color: #38c172;
-}
-
-.active\:text-green-light:active {
-  color: #51d88a;
-}
-
-.active\:text-green-lighter:active {
-  color: #a2f5bf;
-}
-
-.active\:text-green-lightest:active {
-  color: #e3fcec;
-}
-
-.active\:text-teal-darkest:active {
-  color: #0d3331;
-}
-
-.active\:text-teal-darker:active {
-  color: #20504f;
-}
-
-.active\:text-teal-dark:active {
-  color: #38a89d;
-}
-
-.active\:text-teal:active {
-  color: #4dc0b5;
-}
-
-.active\:text-teal-light:active {
-  color: #64d5ca;
-}
-
-.active\:text-teal-lighter:active {
-  color: #a0f0ed;
-}
-
-.active\:text-teal-lightest:active {
-  color: #e8fffe;
-}
-
-.active\:text-blue-darkest:active {
-  color: #12283a;
-}
-
-.active\:text-blue-darker:active {
-  color: #1c3d5a;
-}
-
-.active\:text-blue-dark:active {
-  color: #2779bd;
-}
-
-.active\:text-blue:active {
-  color: #3490dc;
-}
-
-.active\:text-blue-light:active {
-  color: #6cb2eb;
-}
-
-.active\:text-blue-lighter:active {
-  color: #bcdefa;
-}
-
-.active\:text-blue-lightest:active {
-  color: #eff8ff;
-}
-
-.active\:text-indigo-darkest:active {
-  color: #191e38;
-}
-
-.active\:text-indigo-darker:active {
-  color: #2f365f;
-}
-
-.active\:text-indigo-dark:active {
-  color: #5661b3;
-}
-
-.active\:text-indigo:active {
-  color: #6574cd;
-}
-
-.active\:text-indigo-light:active {
-  color: #7886d7;
-}
-
-.active\:text-indigo-lighter:active {
-  color: #b2b7ff;
-}
-
-.active\:text-indigo-lightest:active {
-  color: #e6e8ff;
-}
-
-.active\:text-purple-darkest:active {
-  color: #21183c;
-}
-
-.active\:text-purple-darker:active {
-  color: #382b5f;
-}
-
-.active\:text-purple-dark:active {
-  color: #794acf;
-}
-
-.active\:text-purple:active {
-  color: #9561e2;
-}
-
-.active\:text-purple-light:active {
-  color: #a779e9;
-}
-
-.active\:text-purple-lighter:active {
-  color: #d6bbfc;
-}
-
-.active\:text-purple-lightest:active {
-  color: #f3ebff;
-}
-
-.active\:text-pink-darkest:active {
-  color: #451225;
-}
-
-.active\:text-pink-darker:active {
-  color: #6f213f;
-}
-
-.active\:text-pink-dark:active {
-  color: #eb5286;
-}
-
-.active\:text-pink:active {
-  color: #f66d9b;
-}
-
-.active\:text-pink-light:active {
-  color: #fa7ea8;
-}
-
-.active\:text-pink-lighter:active {
-  color: #ffbbca;
-}
-
-.active\:text-pink-lightest:active {
-  color: #ffebef;
+.text-xxs {
+  font-size: .25rem;
 }
 
 .text-xs {
-  font-size: .75rem;
+  font-size: .5rem;
 }
 
 .text-sm {
@@ -5532,6 +5175,18 @@ table {
 
 .text-5xl {
   font-size: 3rem;
+}
+
+.text-6xl {
+  font-size: 4rem;
+}
+
+.text-7xl {
+  font-size: 5rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
 }
 
 .italic {
@@ -5762,6 +5417,14 @@ table {
 
 .w-64 {
   width: 16rem;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
 }
 
 .w-auto {
@@ -6534,330 +6197,6 @@ table {
     background-color: #ffebef;
   }
 
-  .sm\:active\:bg-transparent:active {
-    background-color: transparent;
-  }
-
-  .sm\:active\:bg-black-doubledeep:active {
-    background-color: #22292f;
-  }
-
-  .sm\:active\:bg-black-deep:active {
-    background-color: #22292f;
-  }
-
-  .sm\:active\:bg-black-base:active {
-    background-color: #22292f;
-  }
-
-  .sm\:active\:bg-black-light:active {
-    background-color: #22292f;
-  }
-
-  .sm\:active\:bg-black-doublelight:active {
-    background-color: #22292f;
-  }
-
-  .sm\:active\:bg-darkblue:active {
-    background-color: #222c2f;
-  }
-
-  .sm\:active\:bg-darkgreen:active {
-    background-color: ##222F2F;
-  }
-
-  .sm\:active\:bg-darkred:active {
-    background-color: #2f2224;
-  }
-
-  .sm\:active\:bg-black:active {
-    background-color: #22292f;
-  }
-
-  .sm\:active\:bg-grey-darkest:active {
-    background-color: #3d4852;
-  }
-
-  .sm\:active\:bg-grey-darker:active {
-    background-color: #606f7b;
-  }
-
-  .sm\:active\:bg-grey-dark:active {
-    background-color: #8795a1;
-  }
-
-  .sm\:active\:bg-grey:active {
-    background-color: #b8c2cc;
-  }
-
-  .sm\:active\:bg-grey-light:active {
-    background-color: #dae1e7;
-  }
-
-  .sm\:active\:bg-grey-lighter:active {
-    background-color: #f1f5f8;
-  }
-
-  .sm\:active\:bg-grey-lightest:active {
-    background-color: #f8fafc;
-  }
-
-  .sm\:active\:bg-white:active {
-    background-color: #fff;
-  }
-
-  .sm\:active\:bg-red-darkest:active {
-    background-color: #3b0d0c;
-  }
-
-  .sm\:active\:bg-red-darker:active {
-    background-color: #621b18;
-  }
-
-  .sm\:active\:bg-red-dark:active {
-    background-color: #cc1f1a;
-  }
-
-  .sm\:active\:bg-red:active {
-    background-color: #e3342f;
-  }
-
-  .sm\:active\:bg-red-light:active {
-    background-color: #ef5753;
-  }
-
-  .sm\:active\:bg-red-lighter:active {
-    background-color: #f9acaa;
-  }
-
-  .sm\:active\:bg-red-lightest:active {
-    background-color: #fcebea;
-  }
-
-  .sm\:active\:bg-orange-darkest:active {
-    background-color: #462a16;
-  }
-
-  .sm\:active\:bg-orange-darker:active {
-    background-color: #613b1f;
-  }
-
-  .sm\:active\:bg-orange-dark:active {
-    background-color: #de751f;
-  }
-
-  .sm\:active\:bg-orange:active {
-    background-color: #f6993f;
-  }
-
-  .sm\:active\:bg-orange-light:active {
-    background-color: #faad63;
-  }
-
-  .sm\:active\:bg-orange-lighter:active {
-    background-color: #fcd9b6;
-  }
-
-  .sm\:active\:bg-orange-lightest:active {
-    background-color: #fff5eb;
-  }
-
-  .sm\:active\:bg-yellow-darkest:active {
-    background-color: #453411;
-  }
-
-  .sm\:active\:bg-yellow-darker:active {
-    background-color: #684f1d;
-  }
-
-  .sm\:active\:bg-yellow-dark:active {
-    background-color: #f2d024;
-  }
-
-  .sm\:active\:bg-yellow:active {
-    background-color: #ffed4a;
-  }
-
-  .sm\:active\:bg-yellow-light:active {
-    background-color: #fff382;
-  }
-
-  .sm\:active\:bg-yellow-lighter:active {
-    background-color: #fff9c2;
-  }
-
-  .sm\:active\:bg-yellow-lightest:active {
-    background-color: #fcfbeb;
-  }
-
-  .sm\:active\:bg-green-darkest:active {
-    background-color: #0f2f21;
-  }
-
-  .sm\:active\:bg-green-darker:active {
-    background-color: #1a4731;
-  }
-
-  .sm\:active\:bg-green-dark:active {
-    background-color: #1f9d55;
-  }
-
-  .sm\:active\:bg-green:active {
-    background-color: #38c172;
-  }
-
-  .sm\:active\:bg-green-light:active {
-    background-color: #51d88a;
-  }
-
-  .sm\:active\:bg-green-lighter:active {
-    background-color: #a2f5bf;
-  }
-
-  .sm\:active\:bg-green-lightest:active {
-    background-color: #e3fcec;
-  }
-
-  .sm\:active\:bg-teal-darkest:active {
-    background-color: #0d3331;
-  }
-
-  .sm\:active\:bg-teal-darker:active {
-    background-color: #20504f;
-  }
-
-  .sm\:active\:bg-teal-dark:active {
-    background-color: #38a89d;
-  }
-
-  .sm\:active\:bg-teal:active {
-    background-color: #4dc0b5;
-  }
-
-  .sm\:active\:bg-teal-light:active {
-    background-color: #64d5ca;
-  }
-
-  .sm\:active\:bg-teal-lighter:active {
-    background-color: #a0f0ed;
-  }
-
-  .sm\:active\:bg-teal-lightest:active {
-    background-color: #e8fffe;
-  }
-
-  .sm\:active\:bg-blue-darkest:active {
-    background-color: #12283a;
-  }
-
-  .sm\:active\:bg-blue-darker:active {
-    background-color: #1c3d5a;
-  }
-
-  .sm\:active\:bg-blue-dark:active {
-    background-color: #2779bd;
-  }
-
-  .sm\:active\:bg-blue:active {
-    background-color: #3490dc;
-  }
-
-  .sm\:active\:bg-blue-light:active {
-    background-color: #6cb2eb;
-  }
-
-  .sm\:active\:bg-blue-lighter:active {
-    background-color: #bcdefa;
-  }
-
-  .sm\:active\:bg-blue-lightest:active {
-    background-color: #eff8ff;
-  }
-
-  .sm\:active\:bg-indigo-darkest:active {
-    background-color: #191e38;
-  }
-
-  .sm\:active\:bg-indigo-darker:active {
-    background-color: #2f365f;
-  }
-
-  .sm\:active\:bg-indigo-dark:active {
-    background-color: #5661b3;
-  }
-
-  .sm\:active\:bg-indigo:active {
-    background-color: #6574cd;
-  }
-
-  .sm\:active\:bg-indigo-light:active {
-    background-color: #7886d7;
-  }
-
-  .sm\:active\:bg-indigo-lighter:active {
-    background-color: #b2b7ff;
-  }
-
-  .sm\:active\:bg-indigo-lightest:active {
-    background-color: #e6e8ff;
-  }
-
-  .sm\:active\:bg-purple-darkest:active {
-    background-color: #21183c;
-  }
-
-  .sm\:active\:bg-purple-darker:active {
-    background-color: #382b5f;
-  }
-
-  .sm\:active\:bg-purple-dark:active {
-    background-color: #794acf;
-  }
-
-  .sm\:active\:bg-purple:active {
-    background-color: #9561e2;
-  }
-
-  .sm\:active\:bg-purple-light:active {
-    background-color: #a779e9;
-  }
-
-  .sm\:active\:bg-purple-lighter:active {
-    background-color: #d6bbfc;
-  }
-
-  .sm\:active\:bg-purple-lightest:active {
-    background-color: #f3ebff;
-  }
-
-  .sm\:active\:bg-pink-darkest:active {
-    background-color: #451225;
-  }
-
-  .sm\:active\:bg-pink-darker:active {
-    background-color: #6f213f;
-  }
-
-  .sm\:active\:bg-pink-dark:active {
-    background-color: #eb5286;
-  }
-
-  .sm\:active\:bg-pink:active {
-    background-color: #f66d9b;
-  }
-
-  .sm\:active\:bg-pink-light:active {
-    background-color: #fa7ea8;
-  }
-
-  .sm\:active\:bg-pink-lighter:active {
-    background-color: #ffbbca;
-  }
-
-  .sm\:active\:bg-pink-lightest:active {
-    background-color: #ffebef;
-  }
-
   .sm\:bg-bottom {
     background-position: bottom;
   }
@@ -7570,330 +6909,6 @@ table {
     border-color: #ffebef;
   }
 
-  .sm\:active\:border-transparent:active {
-    border-color: transparent;
-  }
-
-  .sm\:active\:border-black-doubledeep:active {
-    border-color: #22292f;
-  }
-
-  .sm\:active\:border-black-deep:active {
-    border-color: #22292f;
-  }
-
-  .sm\:active\:border-black-base:active {
-    border-color: #22292f;
-  }
-
-  .sm\:active\:border-black-light:active {
-    border-color: #22292f;
-  }
-
-  .sm\:active\:border-black-doublelight:active {
-    border-color: #22292f;
-  }
-
-  .sm\:active\:border-darkblue:active {
-    border-color: #222c2f;
-  }
-
-  .sm\:active\:border-darkgreen:active {
-    border-color: ##222F2F;
-  }
-
-  .sm\:active\:border-darkred:active {
-    border-color: #2f2224;
-  }
-
-  .sm\:active\:border-black:active {
-    border-color: #22292f;
-  }
-
-  .sm\:active\:border-grey-darkest:active {
-    border-color: #3d4852;
-  }
-
-  .sm\:active\:border-grey-darker:active {
-    border-color: #606f7b;
-  }
-
-  .sm\:active\:border-grey-dark:active {
-    border-color: #8795a1;
-  }
-
-  .sm\:active\:border-grey:active {
-    border-color: #b8c2cc;
-  }
-
-  .sm\:active\:border-grey-light:active {
-    border-color: #dae1e7;
-  }
-
-  .sm\:active\:border-grey-lighter:active {
-    border-color: #f1f5f8;
-  }
-
-  .sm\:active\:border-grey-lightest:active {
-    border-color: #f8fafc;
-  }
-
-  .sm\:active\:border-white:active {
-    border-color: #fff;
-  }
-
-  .sm\:active\:border-red-darkest:active {
-    border-color: #3b0d0c;
-  }
-
-  .sm\:active\:border-red-darker:active {
-    border-color: #621b18;
-  }
-
-  .sm\:active\:border-red-dark:active {
-    border-color: #cc1f1a;
-  }
-
-  .sm\:active\:border-red:active {
-    border-color: #e3342f;
-  }
-
-  .sm\:active\:border-red-light:active {
-    border-color: #ef5753;
-  }
-
-  .sm\:active\:border-red-lighter:active {
-    border-color: #f9acaa;
-  }
-
-  .sm\:active\:border-red-lightest:active {
-    border-color: #fcebea;
-  }
-
-  .sm\:active\:border-orange-darkest:active {
-    border-color: #462a16;
-  }
-
-  .sm\:active\:border-orange-darker:active {
-    border-color: #613b1f;
-  }
-
-  .sm\:active\:border-orange-dark:active {
-    border-color: #de751f;
-  }
-
-  .sm\:active\:border-orange:active {
-    border-color: #f6993f;
-  }
-
-  .sm\:active\:border-orange-light:active {
-    border-color: #faad63;
-  }
-
-  .sm\:active\:border-orange-lighter:active {
-    border-color: #fcd9b6;
-  }
-
-  .sm\:active\:border-orange-lightest:active {
-    border-color: #fff5eb;
-  }
-
-  .sm\:active\:border-yellow-darkest:active {
-    border-color: #453411;
-  }
-
-  .sm\:active\:border-yellow-darker:active {
-    border-color: #684f1d;
-  }
-
-  .sm\:active\:border-yellow-dark:active {
-    border-color: #f2d024;
-  }
-
-  .sm\:active\:border-yellow:active {
-    border-color: #ffed4a;
-  }
-
-  .sm\:active\:border-yellow-light:active {
-    border-color: #fff382;
-  }
-
-  .sm\:active\:border-yellow-lighter:active {
-    border-color: #fff9c2;
-  }
-
-  .sm\:active\:border-yellow-lightest:active {
-    border-color: #fcfbeb;
-  }
-
-  .sm\:active\:border-green-darkest:active {
-    border-color: #0f2f21;
-  }
-
-  .sm\:active\:border-green-darker:active {
-    border-color: #1a4731;
-  }
-
-  .sm\:active\:border-green-dark:active {
-    border-color: #1f9d55;
-  }
-
-  .sm\:active\:border-green:active {
-    border-color: #38c172;
-  }
-
-  .sm\:active\:border-green-light:active {
-    border-color: #51d88a;
-  }
-
-  .sm\:active\:border-green-lighter:active {
-    border-color: #a2f5bf;
-  }
-
-  .sm\:active\:border-green-lightest:active {
-    border-color: #e3fcec;
-  }
-
-  .sm\:active\:border-teal-darkest:active {
-    border-color: #0d3331;
-  }
-
-  .sm\:active\:border-teal-darker:active {
-    border-color: #20504f;
-  }
-
-  .sm\:active\:border-teal-dark:active {
-    border-color: #38a89d;
-  }
-
-  .sm\:active\:border-teal:active {
-    border-color: #4dc0b5;
-  }
-
-  .sm\:active\:border-teal-light:active {
-    border-color: #64d5ca;
-  }
-
-  .sm\:active\:border-teal-lighter:active {
-    border-color: #a0f0ed;
-  }
-
-  .sm\:active\:border-teal-lightest:active {
-    border-color: #e8fffe;
-  }
-
-  .sm\:active\:border-blue-darkest:active {
-    border-color: #12283a;
-  }
-
-  .sm\:active\:border-blue-darker:active {
-    border-color: #1c3d5a;
-  }
-
-  .sm\:active\:border-blue-dark:active {
-    border-color: #2779bd;
-  }
-
-  .sm\:active\:border-blue:active {
-    border-color: #3490dc;
-  }
-
-  .sm\:active\:border-blue-light:active {
-    border-color: #6cb2eb;
-  }
-
-  .sm\:active\:border-blue-lighter:active {
-    border-color: #bcdefa;
-  }
-
-  .sm\:active\:border-blue-lightest:active {
-    border-color: #eff8ff;
-  }
-
-  .sm\:active\:border-indigo-darkest:active {
-    border-color: #191e38;
-  }
-
-  .sm\:active\:border-indigo-darker:active {
-    border-color: #2f365f;
-  }
-
-  .sm\:active\:border-indigo-dark:active {
-    border-color: #5661b3;
-  }
-
-  .sm\:active\:border-indigo:active {
-    border-color: #6574cd;
-  }
-
-  .sm\:active\:border-indigo-light:active {
-    border-color: #7886d7;
-  }
-
-  .sm\:active\:border-indigo-lighter:active {
-    border-color: #b2b7ff;
-  }
-
-  .sm\:active\:border-indigo-lightest:active {
-    border-color: #e6e8ff;
-  }
-
-  .sm\:active\:border-purple-darkest:active {
-    border-color: #21183c;
-  }
-
-  .sm\:active\:border-purple-darker:active {
-    border-color: #382b5f;
-  }
-
-  .sm\:active\:border-purple-dark:active {
-    border-color: #794acf;
-  }
-
-  .sm\:active\:border-purple:active {
-    border-color: #9561e2;
-  }
-
-  .sm\:active\:border-purple-light:active {
-    border-color: #a779e9;
-  }
-
-  .sm\:active\:border-purple-lighter:active {
-    border-color: #d6bbfc;
-  }
-
-  .sm\:active\:border-purple-lightest:active {
-    border-color: #f3ebff;
-  }
-
-  .sm\:active\:border-pink-darkest:active {
-    border-color: #451225;
-  }
-
-  .sm\:active\:border-pink-darker:active {
-    border-color: #6f213f;
-  }
-
-  .sm\:active\:border-pink-dark:active {
-    border-color: #eb5286;
-  }
-
-  .sm\:active\:border-pink:active {
-    border-color: #f66d9b;
-  }
-
-  .sm\:active\:border-pink-light:active {
-    border-color: #fa7ea8;
-  }
-
-  .sm\:active\:border-pink-lighter:active {
-    border-color: #ffbbca;
-  }
-
-  .sm\:active\:border-pink-lightest:active {
-    border-color: #ffebef;
-  }
-
   .sm\:rounded-none {
     border-radius: 0;
   }
@@ -7908,6 +6923,14 @@ table {
 
   .sm\:rounded-lg {
     border-radius: .5rem;
+  }
+
+  .sm\:rounded-xl {
+    border-radius: .75rem;
+  }
+
+  .sm\:rounded-xxl {
+    border-radius: 1rem;
   }
 
   .sm\:rounded-full {
@@ -7994,6 +7017,46 @@ table {
     border-bottom-left-radius: .5rem;
   }
 
+  .sm\:rounded-t-xl {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+  }
+
+  .sm\:rounded-r-xl {
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+  }
+
+  .sm\:rounded-b-xl {
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .sm\:rounded-l-xl {
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .sm\:rounded-t-xxl {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .sm\:rounded-r-xxl {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .sm\:rounded-b-xxl {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .sm\:rounded-l-xxl {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
   .sm\:rounded-t-full {
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
@@ -8078,6 +7141,38 @@ table {
     border-bottom-left-radius: .5rem;
   }
 
+  .sm\:rounded-tl-xl {
+    border-top-left-radius: .75rem;
+  }
+
+  .sm\:rounded-tr-xl {
+    border-top-right-radius: .75rem;
+  }
+
+  .sm\:rounded-br-xl {
+    border-bottom-right-radius: .75rem;
+  }
+
+  .sm\:rounded-bl-xl {
+    border-bottom-left-radius: .75rem;
+  }
+
+  .sm\:rounded-tl-xxl {
+    border-top-left-radius: 1rem;
+  }
+
+  .sm\:rounded-tr-xxl {
+    border-top-right-radius: 1rem;
+  }
+
+  .sm\:rounded-br-xxl {
+    border-bottom-right-radius: 1rem;
+  }
+
+  .sm\:rounded-bl-xxl {
+    border-bottom-left-radius: 1rem;
+  }
+
   .sm\:rounded-tl-full {
     border-top-left-radius: 9999px;
   }
@@ -8118,8 +7213,16 @@ table {
     border-width: 2px;
   }
 
+  .sm\:border-3 {
+    border-width: 3px;
+  }
+
   .sm\:border-4 {
     border-width: 4px;
+  }
+
+  .sm\:border-6 {
+    border-width: 6px;
   }
 
   .sm\:border-8 {
@@ -8162,6 +7265,22 @@ table {
     border-left-width: 2px;
   }
 
+  .sm\:border-t-3 {
+    border-top-width: 3px;
+  }
+
+  .sm\:border-r-3 {
+    border-right-width: 3px;
+  }
+
+  .sm\:border-b-3 {
+    border-bottom-width: 3px;
+  }
+
+  .sm\:border-l-3 {
+    border-left-width: 3px;
+  }
+
   .sm\:border-t-4 {
     border-top-width: 4px;
   }
@@ -8176,6 +7295,22 @@ table {
 
   .sm\:border-l-4 {
     border-left-width: 4px;
+  }
+
+  .sm\:border-t-6 {
+    border-top-width: 6px;
+  }
+
+  .sm\:border-r-6 {
+    border-right-width: 6px;
+  }
+
+  .sm\:border-b-6 {
+    border-bottom-width: 6px;
+  }
+
+  .sm\:border-l-6 {
+    border-left-width: 6px;
   }
 
   .sm\:border-t-8 {
@@ -8429,11 +7564,11 @@ table {
   }
 
   .sm\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Open Sans, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .sm\:font-serif {
-    font-family: Georgia, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, serif;
+    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .sm\:font-mono {
@@ -8512,42 +7647,6 @@ table {
     font-weight: 900;
   }
 
-  .sm\:active\:font-hairline:active {
-    font-weight: 100;
-  }
-
-  .sm\:active\:font-thin:active {
-    font-weight: 200;
-  }
-
-  .sm\:active\:font-light:active {
-    font-weight: 300;
-  }
-
-  .sm\:active\:font-normal:active {
-    font-weight: 400;
-  }
-
-  .sm\:active\:font-medium:active {
-    font-weight: 500;
-  }
-
-  .sm\:active\:font-semibold:active {
-    font-weight: 600;
-  }
-
-  .sm\:active\:font-bold:active {
-    font-weight: 700;
-  }
-
-  .sm\:active\:font-extrabold:active {
-    font-weight: 800;
-  }
-
-  .sm\:active\:font-black:active {
-    font-weight: 900;
-  }
-
   .sm\:h-1 {
     height: .25rem;
   }
@@ -8596,8 +7695,20 @@ table {
     height: 12rem;
   }
 
+  .sm\:h-50 {
+    height: 50vh;
+  }
+
   .sm\:h-64 {
     height: 16rem;
+  }
+
+  .sm\:h-70 {
+    height: 70vh;
+  }
+
+  .sm\:h-80 {
+    height: 80vh;
   }
 
   .sm\:h-90 {
@@ -8614,6 +7725,14 @@ table {
 
   .sm\:h-full {
     height: 100%;
+  }
+
+  .sm\:h-1\/3 {
+    height: 33.3vh;
+  }
+
+  .sm\:h-2\/3 {
+    height: 66.6vh;
   }
 
   .sm\:h-screen {
@@ -8662,6 +7781,30 @@ table {
 
   .sm\:m-8 {
     margin: 2rem;
+  }
+
+  .sm\:m-10 {
+    margin: 2.5rem;
+  }
+
+  .sm\:m-12 {
+    margin: 3rem;
+  }
+
+  .sm\:m-14 {
+    margin: 3, 5rem;
+  }
+
+  .sm\:m-16 {
+    margin: 4rem;
+  }
+
+  .sm\:m-18 {
+    margin: 4, 5rem;
+  }
+
+  .sm\:m-20 {
+    margin: 5rem;
   }
 
   .sm\:m-auto {
@@ -8740,6 +7883,66 @@ table {
   .sm\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .sm\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .sm\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .sm\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .sm\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .sm\:my-14 {
+    margin-top: 3, 5rem;
+    margin-bottom: 3, 5rem;
+  }
+
+  .sm\:mx-14 {
+    margin-left: 3, 5rem;
+    margin-right: 3, 5rem;
+  }
+
+  .sm\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .sm\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .sm\:my-18 {
+    margin-top: 4, 5rem;
+    margin-bottom: 4, 5rem;
+  }
+
+  .sm\:mx-18 {
+    margin-left: 4, 5rem;
+    margin-right: 4, 5rem;
+  }
+
+  .sm\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .sm\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .sm\:my-auto {
@@ -8872,6 +8075,102 @@ table {
 
   .sm\:ml-8 {
     margin-left: 2rem;
+  }
+
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .sm\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .sm\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .sm\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .sm\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .sm\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .sm\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .sm\:ml-12 {
+    margin-left: 3rem;
+  }
+
+  .sm\:mt-14 {
+    margin-top: 3, 5rem;
+  }
+
+  .sm\:mr-14 {
+    margin-right: 3, 5rem;
+  }
+
+  .sm\:mb-14 {
+    margin-bottom: 3, 5rem;
+  }
+
+  .sm\:ml-14 {
+    margin-left: 3, 5rem;
+  }
+
+  .sm\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .sm\:mr-16 {
+    margin-right: 4rem;
+  }
+
+  .sm\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .sm\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .sm\:mt-18 {
+    margin-top: 4, 5rem;
+  }
+
+  .sm\:mr-18 {
+    margin-right: 4, 5rem;
+  }
+
+  .sm\:mb-18 {
+    margin-bottom: 4, 5rem;
+  }
+
+  .sm\:ml-18 {
+    margin-left: 4, 5rem;
+  }
+
+  .sm\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .sm\:mr-20 {
+    margin-right: 5rem;
+  }
+
+  .sm\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .sm\:ml-20 {
+    margin-left: 5rem;
   }
 
   .sm\:mt-auto {
@@ -9318,8 +8617,36 @@ table {
     padding: 2rem;
   }
 
+  .sm\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .sm\:p-12 {
+    padding: 3rem;
+  }
+
+  .sm\:p-14 {
+    padding: 3, 5rem;
+  }
+
+  .sm\:p-16 {
+    padding: 4rem;
+  }
+
+  .sm\:p-18 {
+    padding: 4, 5rem;
+  }
+
+  .sm\:p-20 {
+    padding: 5rem;
+  }
+
   .sm\:p-px {
     padding: 1px;
+  }
+
+  .sm\:p-20px {
+    padding: 20px;
   }
 
   .sm\:py-0 {
@@ -9392,6 +8719,66 @@ table {
     padding-right: 2rem;
   }
 
+  .sm\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .sm\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .sm\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .sm\:py-14 {
+    padding-top: 3, 5rem;
+    padding-bottom: 3, 5rem;
+  }
+
+  .sm\:px-14 {
+    padding-left: 3, 5rem;
+    padding-right: 3, 5rem;
+  }
+
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .sm\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .sm\:py-18 {
+    padding-top: 4, 5rem;
+    padding-bottom: 4, 5rem;
+  }
+
+  .sm\:px-18 {
+    padding-left: 4, 5rem;
+    padding-right: 4, 5rem;
+  }
+
+  .sm\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .sm\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .sm\:py-px {
     padding-top: 1px;
     padding-bottom: 1px;
@@ -9400,6 +8787,16 @@ table {
   .sm\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .sm\:py-20px {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .sm\:px-20px {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .sm\:pt-0 {
@@ -9514,6 +8911,102 @@ table {
     padding-left: 2rem;
   }
 
+  .sm\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .sm\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .sm\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .sm\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .sm\:pt-12 {
+    padding-top: 3rem;
+  }
+
+  .sm\:pr-12 {
+    padding-right: 3rem;
+  }
+
+  .sm\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
+  .sm\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .sm\:pt-14 {
+    padding-top: 3, 5rem;
+  }
+
+  .sm\:pr-14 {
+    padding-right: 3, 5rem;
+  }
+
+  .sm\:pb-14 {
+    padding-bottom: 3, 5rem;
+  }
+
+  .sm\:pl-14 {
+    padding-left: 3, 5rem;
+  }
+
+  .sm\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .sm\:pr-16 {
+    padding-right: 4rem;
+  }
+
+  .sm\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .sm\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .sm\:pt-18 {
+    padding-top: 4, 5rem;
+  }
+
+  .sm\:pr-18 {
+    padding-right: 4, 5rem;
+  }
+
+  .sm\:pb-18 {
+    padding-bottom: 4, 5rem;
+  }
+
+  .sm\:pl-18 {
+    padding-left: 4, 5rem;
+  }
+
+  .sm\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .sm\:pr-20 {
+    padding-right: 5rem;
+  }
+
+  .sm\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .sm\:pl-20 {
+    padding-left: 5rem;
+  }
+
   .sm\:pt-px {
     padding-top: 1px;
   }
@@ -9528,6 +9021,22 @@ table {
 
   .sm\:pl-px {
     padding-left: 1px;
+  }
+
+  .sm\:pt-20px {
+    padding-top: 20px;
+  }
+
+  .sm\:pr-20px {
+    padding-right: 20px;
+  }
+
+  .sm\:pb-20px {
+    padding-bottom: 20px;
+  }
+
+  .sm\:pl-20px {
+    padding-left: 20px;
   }
 
   .sm\:pointer-events-none {
@@ -10306,332 +9815,12 @@ table {
     color: #ffebef;
   }
 
-  .sm\:active\:text-transparent:active {
-    color: transparent;
-  }
-
-  .sm\:active\:text-black-doubledeep:active {
-    color: #22292f;
-  }
-
-  .sm\:active\:text-black-deep:active {
-    color: #22292f;
-  }
-
-  .sm\:active\:text-black-base:active {
-    color: #22292f;
-  }
-
-  .sm\:active\:text-black-light:active {
-    color: #22292f;
-  }
-
-  .sm\:active\:text-black-doublelight:active {
-    color: #22292f;
-  }
-
-  .sm\:active\:text-darkblue:active {
-    color: #222c2f;
-  }
-
-  .sm\:active\:text-darkgreen:active {
-    color: ##222F2F;
-  }
-
-  .sm\:active\:text-darkred:active {
-    color: #2f2224;
-  }
-
-  .sm\:active\:text-black:active {
-    color: #22292f;
-  }
-
-  .sm\:active\:text-grey-darkest:active {
-    color: #3d4852;
-  }
-
-  .sm\:active\:text-grey-darker:active {
-    color: #606f7b;
-  }
-
-  .sm\:active\:text-grey-dark:active {
-    color: #8795a1;
-  }
-
-  .sm\:active\:text-grey:active {
-    color: #b8c2cc;
-  }
-
-  .sm\:active\:text-grey-light:active {
-    color: #dae1e7;
-  }
-
-  .sm\:active\:text-grey-lighter:active {
-    color: #f1f5f8;
-  }
-
-  .sm\:active\:text-grey-lightest:active {
-    color: #f8fafc;
-  }
-
-  .sm\:active\:text-white:active {
-    color: #fff;
-  }
-
-  .sm\:active\:text-red-darkest:active {
-    color: #3b0d0c;
-  }
-
-  .sm\:active\:text-red-darker:active {
-    color: #621b18;
-  }
-
-  .sm\:active\:text-red-dark:active {
-    color: #cc1f1a;
-  }
-
-  .sm\:active\:text-red:active {
-    color: #e3342f;
-  }
-
-  .sm\:active\:text-red-light:active {
-    color: #ef5753;
-  }
-
-  .sm\:active\:text-red-lighter:active {
-    color: #f9acaa;
-  }
-
-  .sm\:active\:text-red-lightest:active {
-    color: #fcebea;
-  }
-
-  .sm\:active\:text-orange-darkest:active {
-    color: #462a16;
-  }
-
-  .sm\:active\:text-orange-darker:active {
-    color: #613b1f;
-  }
-
-  .sm\:active\:text-orange-dark:active {
-    color: #de751f;
-  }
-
-  .sm\:active\:text-orange:active {
-    color: #f6993f;
-  }
-
-  .sm\:active\:text-orange-light:active {
-    color: #faad63;
-  }
-
-  .sm\:active\:text-orange-lighter:active {
-    color: #fcd9b6;
-  }
-
-  .sm\:active\:text-orange-lightest:active {
-    color: #fff5eb;
-  }
-
-  .sm\:active\:text-yellow-darkest:active {
-    color: #453411;
-  }
-
-  .sm\:active\:text-yellow-darker:active {
-    color: #684f1d;
-  }
-
-  .sm\:active\:text-yellow-dark:active {
-    color: #f2d024;
-  }
-
-  .sm\:active\:text-yellow:active {
-    color: #ffed4a;
-  }
-
-  .sm\:active\:text-yellow-light:active {
-    color: #fff382;
-  }
-
-  .sm\:active\:text-yellow-lighter:active {
-    color: #fff9c2;
-  }
-
-  .sm\:active\:text-yellow-lightest:active {
-    color: #fcfbeb;
-  }
-
-  .sm\:active\:text-green-darkest:active {
-    color: #0f2f21;
-  }
-
-  .sm\:active\:text-green-darker:active {
-    color: #1a4731;
-  }
-
-  .sm\:active\:text-green-dark:active {
-    color: #1f9d55;
-  }
-
-  .sm\:active\:text-green:active {
-    color: #38c172;
-  }
-
-  .sm\:active\:text-green-light:active {
-    color: #51d88a;
-  }
-
-  .sm\:active\:text-green-lighter:active {
-    color: #a2f5bf;
-  }
-
-  .sm\:active\:text-green-lightest:active {
-    color: #e3fcec;
-  }
-
-  .sm\:active\:text-teal-darkest:active {
-    color: #0d3331;
-  }
-
-  .sm\:active\:text-teal-darker:active {
-    color: #20504f;
-  }
-
-  .sm\:active\:text-teal-dark:active {
-    color: #38a89d;
-  }
-
-  .sm\:active\:text-teal:active {
-    color: #4dc0b5;
-  }
-
-  .sm\:active\:text-teal-light:active {
-    color: #64d5ca;
-  }
-
-  .sm\:active\:text-teal-lighter:active {
-    color: #a0f0ed;
-  }
-
-  .sm\:active\:text-teal-lightest:active {
-    color: #e8fffe;
-  }
-
-  .sm\:active\:text-blue-darkest:active {
-    color: #12283a;
-  }
-
-  .sm\:active\:text-blue-darker:active {
-    color: #1c3d5a;
-  }
-
-  .sm\:active\:text-blue-dark:active {
-    color: #2779bd;
-  }
-
-  .sm\:active\:text-blue:active {
-    color: #3490dc;
-  }
-
-  .sm\:active\:text-blue-light:active {
-    color: #6cb2eb;
-  }
-
-  .sm\:active\:text-blue-lighter:active {
-    color: #bcdefa;
-  }
-
-  .sm\:active\:text-blue-lightest:active {
-    color: #eff8ff;
-  }
-
-  .sm\:active\:text-indigo-darkest:active {
-    color: #191e38;
-  }
-
-  .sm\:active\:text-indigo-darker:active {
-    color: #2f365f;
-  }
-
-  .sm\:active\:text-indigo-dark:active {
-    color: #5661b3;
-  }
-
-  .sm\:active\:text-indigo:active {
-    color: #6574cd;
-  }
-
-  .sm\:active\:text-indigo-light:active {
-    color: #7886d7;
-  }
-
-  .sm\:active\:text-indigo-lighter:active {
-    color: #b2b7ff;
-  }
-
-  .sm\:active\:text-indigo-lightest:active {
-    color: #e6e8ff;
-  }
-
-  .sm\:active\:text-purple-darkest:active {
-    color: #21183c;
-  }
-
-  .sm\:active\:text-purple-darker:active {
-    color: #382b5f;
-  }
-
-  .sm\:active\:text-purple-dark:active {
-    color: #794acf;
-  }
-
-  .sm\:active\:text-purple:active {
-    color: #9561e2;
-  }
-
-  .sm\:active\:text-purple-light:active {
-    color: #a779e9;
-  }
-
-  .sm\:active\:text-purple-lighter:active {
-    color: #d6bbfc;
-  }
-
-  .sm\:active\:text-purple-lightest:active {
-    color: #f3ebff;
-  }
-
-  .sm\:active\:text-pink-darkest:active {
-    color: #451225;
-  }
-
-  .sm\:active\:text-pink-darker:active {
-    color: #6f213f;
-  }
-
-  .sm\:active\:text-pink-dark:active {
-    color: #eb5286;
-  }
-
-  .sm\:active\:text-pink:active {
-    color: #f66d9b;
-  }
-
-  .sm\:active\:text-pink-light:active {
-    color: #fa7ea8;
-  }
-
-  .sm\:active\:text-pink-lighter:active {
-    color: #ffbbca;
-  }
-
-  .sm\:active\:text-pink-lightest:active {
-    color: #ffebef;
+  .sm\:text-xxs {
+    font-size: .25rem;
   }
 
   .sm\:text-xs {
-    font-size: .75rem;
+    font-size: .5rem;
   }
 
   .sm\:text-sm {
@@ -10664,6 +9853,18 @@ table {
 
   .sm\:text-5xl {
     font-size: 3rem;
+  }
+
+  .sm\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .sm\:text-7xl {
+    font-size: 5rem;
+  }
+
+  .sm\:text-8xl {
+    font-size: 6rem;
   }
 
   .sm\:italic {
@@ -10894,6 +10095,14 @@ table {
 
   .sm\:w-64 {
     width: 16rem;
+  }
+
+  .sm\:w-80 {
+    width: 80%;
+  }
+
+  .sm\:w-90 {
+    width: 90%;
   }
 
   .sm\:w-auto {
@@ -11655,330 +10864,6 @@ table {
     background-color: #ffebef;
   }
 
-  .md\:active\:bg-transparent:active {
-    background-color: transparent;
-  }
-
-  .md\:active\:bg-black-doubledeep:active {
-    background-color: #22292f;
-  }
-
-  .md\:active\:bg-black-deep:active {
-    background-color: #22292f;
-  }
-
-  .md\:active\:bg-black-base:active {
-    background-color: #22292f;
-  }
-
-  .md\:active\:bg-black-light:active {
-    background-color: #22292f;
-  }
-
-  .md\:active\:bg-black-doublelight:active {
-    background-color: #22292f;
-  }
-
-  .md\:active\:bg-darkblue:active {
-    background-color: #222c2f;
-  }
-
-  .md\:active\:bg-darkgreen:active {
-    background-color: ##222F2F;
-  }
-
-  .md\:active\:bg-darkred:active {
-    background-color: #2f2224;
-  }
-
-  .md\:active\:bg-black:active {
-    background-color: #22292f;
-  }
-
-  .md\:active\:bg-grey-darkest:active {
-    background-color: #3d4852;
-  }
-
-  .md\:active\:bg-grey-darker:active {
-    background-color: #606f7b;
-  }
-
-  .md\:active\:bg-grey-dark:active {
-    background-color: #8795a1;
-  }
-
-  .md\:active\:bg-grey:active {
-    background-color: #b8c2cc;
-  }
-
-  .md\:active\:bg-grey-light:active {
-    background-color: #dae1e7;
-  }
-
-  .md\:active\:bg-grey-lighter:active {
-    background-color: #f1f5f8;
-  }
-
-  .md\:active\:bg-grey-lightest:active {
-    background-color: #f8fafc;
-  }
-
-  .md\:active\:bg-white:active {
-    background-color: #fff;
-  }
-
-  .md\:active\:bg-red-darkest:active {
-    background-color: #3b0d0c;
-  }
-
-  .md\:active\:bg-red-darker:active {
-    background-color: #621b18;
-  }
-
-  .md\:active\:bg-red-dark:active {
-    background-color: #cc1f1a;
-  }
-
-  .md\:active\:bg-red:active {
-    background-color: #e3342f;
-  }
-
-  .md\:active\:bg-red-light:active {
-    background-color: #ef5753;
-  }
-
-  .md\:active\:bg-red-lighter:active {
-    background-color: #f9acaa;
-  }
-
-  .md\:active\:bg-red-lightest:active {
-    background-color: #fcebea;
-  }
-
-  .md\:active\:bg-orange-darkest:active {
-    background-color: #462a16;
-  }
-
-  .md\:active\:bg-orange-darker:active {
-    background-color: #613b1f;
-  }
-
-  .md\:active\:bg-orange-dark:active {
-    background-color: #de751f;
-  }
-
-  .md\:active\:bg-orange:active {
-    background-color: #f6993f;
-  }
-
-  .md\:active\:bg-orange-light:active {
-    background-color: #faad63;
-  }
-
-  .md\:active\:bg-orange-lighter:active {
-    background-color: #fcd9b6;
-  }
-
-  .md\:active\:bg-orange-lightest:active {
-    background-color: #fff5eb;
-  }
-
-  .md\:active\:bg-yellow-darkest:active {
-    background-color: #453411;
-  }
-
-  .md\:active\:bg-yellow-darker:active {
-    background-color: #684f1d;
-  }
-
-  .md\:active\:bg-yellow-dark:active {
-    background-color: #f2d024;
-  }
-
-  .md\:active\:bg-yellow:active {
-    background-color: #ffed4a;
-  }
-
-  .md\:active\:bg-yellow-light:active {
-    background-color: #fff382;
-  }
-
-  .md\:active\:bg-yellow-lighter:active {
-    background-color: #fff9c2;
-  }
-
-  .md\:active\:bg-yellow-lightest:active {
-    background-color: #fcfbeb;
-  }
-
-  .md\:active\:bg-green-darkest:active {
-    background-color: #0f2f21;
-  }
-
-  .md\:active\:bg-green-darker:active {
-    background-color: #1a4731;
-  }
-
-  .md\:active\:bg-green-dark:active {
-    background-color: #1f9d55;
-  }
-
-  .md\:active\:bg-green:active {
-    background-color: #38c172;
-  }
-
-  .md\:active\:bg-green-light:active {
-    background-color: #51d88a;
-  }
-
-  .md\:active\:bg-green-lighter:active {
-    background-color: #a2f5bf;
-  }
-
-  .md\:active\:bg-green-lightest:active {
-    background-color: #e3fcec;
-  }
-
-  .md\:active\:bg-teal-darkest:active {
-    background-color: #0d3331;
-  }
-
-  .md\:active\:bg-teal-darker:active {
-    background-color: #20504f;
-  }
-
-  .md\:active\:bg-teal-dark:active {
-    background-color: #38a89d;
-  }
-
-  .md\:active\:bg-teal:active {
-    background-color: #4dc0b5;
-  }
-
-  .md\:active\:bg-teal-light:active {
-    background-color: #64d5ca;
-  }
-
-  .md\:active\:bg-teal-lighter:active {
-    background-color: #a0f0ed;
-  }
-
-  .md\:active\:bg-teal-lightest:active {
-    background-color: #e8fffe;
-  }
-
-  .md\:active\:bg-blue-darkest:active {
-    background-color: #12283a;
-  }
-
-  .md\:active\:bg-blue-darker:active {
-    background-color: #1c3d5a;
-  }
-
-  .md\:active\:bg-blue-dark:active {
-    background-color: #2779bd;
-  }
-
-  .md\:active\:bg-blue:active {
-    background-color: #3490dc;
-  }
-
-  .md\:active\:bg-blue-light:active {
-    background-color: #6cb2eb;
-  }
-
-  .md\:active\:bg-blue-lighter:active {
-    background-color: #bcdefa;
-  }
-
-  .md\:active\:bg-blue-lightest:active {
-    background-color: #eff8ff;
-  }
-
-  .md\:active\:bg-indigo-darkest:active {
-    background-color: #191e38;
-  }
-
-  .md\:active\:bg-indigo-darker:active {
-    background-color: #2f365f;
-  }
-
-  .md\:active\:bg-indigo-dark:active {
-    background-color: #5661b3;
-  }
-
-  .md\:active\:bg-indigo:active {
-    background-color: #6574cd;
-  }
-
-  .md\:active\:bg-indigo-light:active {
-    background-color: #7886d7;
-  }
-
-  .md\:active\:bg-indigo-lighter:active {
-    background-color: #b2b7ff;
-  }
-
-  .md\:active\:bg-indigo-lightest:active {
-    background-color: #e6e8ff;
-  }
-
-  .md\:active\:bg-purple-darkest:active {
-    background-color: #21183c;
-  }
-
-  .md\:active\:bg-purple-darker:active {
-    background-color: #382b5f;
-  }
-
-  .md\:active\:bg-purple-dark:active {
-    background-color: #794acf;
-  }
-
-  .md\:active\:bg-purple:active {
-    background-color: #9561e2;
-  }
-
-  .md\:active\:bg-purple-light:active {
-    background-color: #a779e9;
-  }
-
-  .md\:active\:bg-purple-lighter:active {
-    background-color: #d6bbfc;
-  }
-
-  .md\:active\:bg-purple-lightest:active {
-    background-color: #f3ebff;
-  }
-
-  .md\:active\:bg-pink-darkest:active {
-    background-color: #451225;
-  }
-
-  .md\:active\:bg-pink-darker:active {
-    background-color: #6f213f;
-  }
-
-  .md\:active\:bg-pink-dark:active {
-    background-color: #eb5286;
-  }
-
-  .md\:active\:bg-pink:active {
-    background-color: #f66d9b;
-  }
-
-  .md\:active\:bg-pink-light:active {
-    background-color: #fa7ea8;
-  }
-
-  .md\:active\:bg-pink-lighter:active {
-    background-color: #ffbbca;
-  }
-
-  .md\:active\:bg-pink-lightest:active {
-    background-color: #ffebef;
-  }
-
   .md\:bg-bottom {
     background-position: bottom;
   }
@@ -12691,330 +11576,6 @@ table {
     border-color: #ffebef;
   }
 
-  .md\:active\:border-transparent:active {
-    border-color: transparent;
-  }
-
-  .md\:active\:border-black-doubledeep:active {
-    border-color: #22292f;
-  }
-
-  .md\:active\:border-black-deep:active {
-    border-color: #22292f;
-  }
-
-  .md\:active\:border-black-base:active {
-    border-color: #22292f;
-  }
-
-  .md\:active\:border-black-light:active {
-    border-color: #22292f;
-  }
-
-  .md\:active\:border-black-doublelight:active {
-    border-color: #22292f;
-  }
-
-  .md\:active\:border-darkblue:active {
-    border-color: #222c2f;
-  }
-
-  .md\:active\:border-darkgreen:active {
-    border-color: ##222F2F;
-  }
-
-  .md\:active\:border-darkred:active {
-    border-color: #2f2224;
-  }
-
-  .md\:active\:border-black:active {
-    border-color: #22292f;
-  }
-
-  .md\:active\:border-grey-darkest:active {
-    border-color: #3d4852;
-  }
-
-  .md\:active\:border-grey-darker:active {
-    border-color: #606f7b;
-  }
-
-  .md\:active\:border-grey-dark:active {
-    border-color: #8795a1;
-  }
-
-  .md\:active\:border-grey:active {
-    border-color: #b8c2cc;
-  }
-
-  .md\:active\:border-grey-light:active {
-    border-color: #dae1e7;
-  }
-
-  .md\:active\:border-grey-lighter:active {
-    border-color: #f1f5f8;
-  }
-
-  .md\:active\:border-grey-lightest:active {
-    border-color: #f8fafc;
-  }
-
-  .md\:active\:border-white:active {
-    border-color: #fff;
-  }
-
-  .md\:active\:border-red-darkest:active {
-    border-color: #3b0d0c;
-  }
-
-  .md\:active\:border-red-darker:active {
-    border-color: #621b18;
-  }
-
-  .md\:active\:border-red-dark:active {
-    border-color: #cc1f1a;
-  }
-
-  .md\:active\:border-red:active {
-    border-color: #e3342f;
-  }
-
-  .md\:active\:border-red-light:active {
-    border-color: #ef5753;
-  }
-
-  .md\:active\:border-red-lighter:active {
-    border-color: #f9acaa;
-  }
-
-  .md\:active\:border-red-lightest:active {
-    border-color: #fcebea;
-  }
-
-  .md\:active\:border-orange-darkest:active {
-    border-color: #462a16;
-  }
-
-  .md\:active\:border-orange-darker:active {
-    border-color: #613b1f;
-  }
-
-  .md\:active\:border-orange-dark:active {
-    border-color: #de751f;
-  }
-
-  .md\:active\:border-orange:active {
-    border-color: #f6993f;
-  }
-
-  .md\:active\:border-orange-light:active {
-    border-color: #faad63;
-  }
-
-  .md\:active\:border-orange-lighter:active {
-    border-color: #fcd9b6;
-  }
-
-  .md\:active\:border-orange-lightest:active {
-    border-color: #fff5eb;
-  }
-
-  .md\:active\:border-yellow-darkest:active {
-    border-color: #453411;
-  }
-
-  .md\:active\:border-yellow-darker:active {
-    border-color: #684f1d;
-  }
-
-  .md\:active\:border-yellow-dark:active {
-    border-color: #f2d024;
-  }
-
-  .md\:active\:border-yellow:active {
-    border-color: #ffed4a;
-  }
-
-  .md\:active\:border-yellow-light:active {
-    border-color: #fff382;
-  }
-
-  .md\:active\:border-yellow-lighter:active {
-    border-color: #fff9c2;
-  }
-
-  .md\:active\:border-yellow-lightest:active {
-    border-color: #fcfbeb;
-  }
-
-  .md\:active\:border-green-darkest:active {
-    border-color: #0f2f21;
-  }
-
-  .md\:active\:border-green-darker:active {
-    border-color: #1a4731;
-  }
-
-  .md\:active\:border-green-dark:active {
-    border-color: #1f9d55;
-  }
-
-  .md\:active\:border-green:active {
-    border-color: #38c172;
-  }
-
-  .md\:active\:border-green-light:active {
-    border-color: #51d88a;
-  }
-
-  .md\:active\:border-green-lighter:active {
-    border-color: #a2f5bf;
-  }
-
-  .md\:active\:border-green-lightest:active {
-    border-color: #e3fcec;
-  }
-
-  .md\:active\:border-teal-darkest:active {
-    border-color: #0d3331;
-  }
-
-  .md\:active\:border-teal-darker:active {
-    border-color: #20504f;
-  }
-
-  .md\:active\:border-teal-dark:active {
-    border-color: #38a89d;
-  }
-
-  .md\:active\:border-teal:active {
-    border-color: #4dc0b5;
-  }
-
-  .md\:active\:border-teal-light:active {
-    border-color: #64d5ca;
-  }
-
-  .md\:active\:border-teal-lighter:active {
-    border-color: #a0f0ed;
-  }
-
-  .md\:active\:border-teal-lightest:active {
-    border-color: #e8fffe;
-  }
-
-  .md\:active\:border-blue-darkest:active {
-    border-color: #12283a;
-  }
-
-  .md\:active\:border-blue-darker:active {
-    border-color: #1c3d5a;
-  }
-
-  .md\:active\:border-blue-dark:active {
-    border-color: #2779bd;
-  }
-
-  .md\:active\:border-blue:active {
-    border-color: #3490dc;
-  }
-
-  .md\:active\:border-blue-light:active {
-    border-color: #6cb2eb;
-  }
-
-  .md\:active\:border-blue-lighter:active {
-    border-color: #bcdefa;
-  }
-
-  .md\:active\:border-blue-lightest:active {
-    border-color: #eff8ff;
-  }
-
-  .md\:active\:border-indigo-darkest:active {
-    border-color: #191e38;
-  }
-
-  .md\:active\:border-indigo-darker:active {
-    border-color: #2f365f;
-  }
-
-  .md\:active\:border-indigo-dark:active {
-    border-color: #5661b3;
-  }
-
-  .md\:active\:border-indigo:active {
-    border-color: #6574cd;
-  }
-
-  .md\:active\:border-indigo-light:active {
-    border-color: #7886d7;
-  }
-
-  .md\:active\:border-indigo-lighter:active {
-    border-color: #b2b7ff;
-  }
-
-  .md\:active\:border-indigo-lightest:active {
-    border-color: #e6e8ff;
-  }
-
-  .md\:active\:border-purple-darkest:active {
-    border-color: #21183c;
-  }
-
-  .md\:active\:border-purple-darker:active {
-    border-color: #382b5f;
-  }
-
-  .md\:active\:border-purple-dark:active {
-    border-color: #794acf;
-  }
-
-  .md\:active\:border-purple:active {
-    border-color: #9561e2;
-  }
-
-  .md\:active\:border-purple-light:active {
-    border-color: #a779e9;
-  }
-
-  .md\:active\:border-purple-lighter:active {
-    border-color: #d6bbfc;
-  }
-
-  .md\:active\:border-purple-lightest:active {
-    border-color: #f3ebff;
-  }
-
-  .md\:active\:border-pink-darkest:active {
-    border-color: #451225;
-  }
-
-  .md\:active\:border-pink-darker:active {
-    border-color: #6f213f;
-  }
-
-  .md\:active\:border-pink-dark:active {
-    border-color: #eb5286;
-  }
-
-  .md\:active\:border-pink:active {
-    border-color: #f66d9b;
-  }
-
-  .md\:active\:border-pink-light:active {
-    border-color: #fa7ea8;
-  }
-
-  .md\:active\:border-pink-lighter:active {
-    border-color: #ffbbca;
-  }
-
-  .md\:active\:border-pink-lightest:active {
-    border-color: #ffebef;
-  }
-
   .md\:rounded-none {
     border-radius: 0;
   }
@@ -13029,6 +11590,14 @@ table {
 
   .md\:rounded-lg {
     border-radius: .5rem;
+  }
+
+  .md\:rounded-xl {
+    border-radius: .75rem;
+  }
+
+  .md\:rounded-xxl {
+    border-radius: 1rem;
   }
 
   .md\:rounded-full {
@@ -13115,6 +11684,46 @@ table {
     border-bottom-left-radius: .5rem;
   }
 
+  .md\:rounded-t-xl {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+  }
+
+  .md\:rounded-r-xl {
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+  }
+
+  .md\:rounded-b-xl {
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .md\:rounded-l-xl {
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .md\:rounded-t-xxl {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .md\:rounded-r-xxl {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .md\:rounded-b-xxl {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .md\:rounded-l-xxl {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
   .md\:rounded-t-full {
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
@@ -13199,6 +11808,38 @@ table {
     border-bottom-left-radius: .5rem;
   }
 
+  .md\:rounded-tl-xl {
+    border-top-left-radius: .75rem;
+  }
+
+  .md\:rounded-tr-xl {
+    border-top-right-radius: .75rem;
+  }
+
+  .md\:rounded-br-xl {
+    border-bottom-right-radius: .75rem;
+  }
+
+  .md\:rounded-bl-xl {
+    border-bottom-left-radius: .75rem;
+  }
+
+  .md\:rounded-tl-xxl {
+    border-top-left-radius: 1rem;
+  }
+
+  .md\:rounded-tr-xxl {
+    border-top-right-radius: 1rem;
+  }
+
+  .md\:rounded-br-xxl {
+    border-bottom-right-radius: 1rem;
+  }
+
+  .md\:rounded-bl-xxl {
+    border-bottom-left-radius: 1rem;
+  }
+
   .md\:rounded-tl-full {
     border-top-left-radius: 9999px;
   }
@@ -13239,8 +11880,16 @@ table {
     border-width: 2px;
   }
 
+  .md\:border-3 {
+    border-width: 3px;
+  }
+
   .md\:border-4 {
     border-width: 4px;
+  }
+
+  .md\:border-6 {
+    border-width: 6px;
   }
 
   .md\:border-8 {
@@ -13283,6 +11932,22 @@ table {
     border-left-width: 2px;
   }
 
+  .md\:border-t-3 {
+    border-top-width: 3px;
+  }
+
+  .md\:border-r-3 {
+    border-right-width: 3px;
+  }
+
+  .md\:border-b-3 {
+    border-bottom-width: 3px;
+  }
+
+  .md\:border-l-3 {
+    border-left-width: 3px;
+  }
+
   .md\:border-t-4 {
     border-top-width: 4px;
   }
@@ -13297,6 +11962,22 @@ table {
 
   .md\:border-l-4 {
     border-left-width: 4px;
+  }
+
+  .md\:border-t-6 {
+    border-top-width: 6px;
+  }
+
+  .md\:border-r-6 {
+    border-right-width: 6px;
+  }
+
+  .md\:border-b-6 {
+    border-bottom-width: 6px;
+  }
+
+  .md\:border-l-6 {
+    border-left-width: 6px;
   }
 
   .md\:border-t-8 {
@@ -13550,11 +12231,11 @@ table {
   }
 
   .md\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Open Sans, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .md\:font-serif {
-    font-family: Georgia, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, serif;
+    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .md\:font-mono {
@@ -13633,42 +12314,6 @@ table {
     font-weight: 900;
   }
 
-  .md\:active\:font-hairline:active {
-    font-weight: 100;
-  }
-
-  .md\:active\:font-thin:active {
-    font-weight: 200;
-  }
-
-  .md\:active\:font-light:active {
-    font-weight: 300;
-  }
-
-  .md\:active\:font-normal:active {
-    font-weight: 400;
-  }
-
-  .md\:active\:font-medium:active {
-    font-weight: 500;
-  }
-
-  .md\:active\:font-semibold:active {
-    font-weight: 600;
-  }
-
-  .md\:active\:font-bold:active {
-    font-weight: 700;
-  }
-
-  .md\:active\:font-extrabold:active {
-    font-weight: 800;
-  }
-
-  .md\:active\:font-black:active {
-    font-weight: 900;
-  }
-
   .md\:h-1 {
     height: .25rem;
   }
@@ -13717,8 +12362,20 @@ table {
     height: 12rem;
   }
 
+  .md\:h-50 {
+    height: 50vh;
+  }
+
   .md\:h-64 {
     height: 16rem;
+  }
+
+  .md\:h-70 {
+    height: 70vh;
+  }
+
+  .md\:h-80 {
+    height: 80vh;
   }
 
   .md\:h-90 {
@@ -13735,6 +12392,14 @@ table {
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:h-1\/3 {
+    height: 33.3vh;
+  }
+
+  .md\:h-2\/3 {
+    height: 66.6vh;
   }
 
   .md\:h-screen {
@@ -13783,6 +12448,30 @@ table {
 
   .md\:m-8 {
     margin: 2rem;
+  }
+
+  .md\:m-10 {
+    margin: 2.5rem;
+  }
+
+  .md\:m-12 {
+    margin: 3rem;
+  }
+
+  .md\:m-14 {
+    margin: 3, 5rem;
+  }
+
+  .md\:m-16 {
+    margin: 4rem;
+  }
+
+  .md\:m-18 {
+    margin: 4, 5rem;
+  }
+
+  .md\:m-20 {
+    margin: 5rem;
   }
 
   .md\:m-auto {
@@ -13861,6 +12550,66 @@ table {
   .md\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .md\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .md\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .md\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .md\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .md\:my-14 {
+    margin-top: 3, 5rem;
+    margin-bottom: 3, 5rem;
+  }
+
+  .md\:mx-14 {
+    margin-left: 3, 5rem;
+    margin-right: 3, 5rem;
+  }
+
+  .md\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .md\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .md\:my-18 {
+    margin-top: 4, 5rem;
+    margin-bottom: 4, 5rem;
+  }
+
+  .md\:mx-18 {
+    margin-left: 4, 5rem;
+    margin-right: 4, 5rem;
+  }
+
+  .md\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .md\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .md\:my-auto {
@@ -13993,6 +12742,102 @@ table {
 
   .md\:ml-8 {
     margin-left: 2rem;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .md\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .md\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .md\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .md\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .md\:ml-12 {
+    margin-left: 3rem;
+  }
+
+  .md\:mt-14 {
+    margin-top: 3, 5rem;
+  }
+
+  .md\:mr-14 {
+    margin-right: 3, 5rem;
+  }
+
+  .md\:mb-14 {
+    margin-bottom: 3, 5rem;
+  }
+
+  .md\:ml-14 {
+    margin-left: 3, 5rem;
+  }
+
+  .md\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .md\:mr-16 {
+    margin-right: 4rem;
+  }
+
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .md\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .md\:mt-18 {
+    margin-top: 4, 5rem;
+  }
+
+  .md\:mr-18 {
+    margin-right: 4, 5rem;
+  }
+
+  .md\:mb-18 {
+    margin-bottom: 4, 5rem;
+  }
+
+  .md\:ml-18 {
+    margin-left: 4, 5rem;
+  }
+
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .md\:mr-20 {
+    margin-right: 5rem;
+  }
+
+  .md\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .md\:ml-20 {
+    margin-left: 5rem;
   }
 
   .md\:mt-auto {
@@ -14439,8 +13284,36 @@ table {
     padding: 2rem;
   }
 
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
+  .md\:p-14 {
+    padding: 3, 5rem;
+  }
+
+  .md\:p-16 {
+    padding: 4rem;
+  }
+
+  .md\:p-18 {
+    padding: 4, 5rem;
+  }
+
+  .md\:p-20 {
+    padding: 5rem;
+  }
+
   .md\:p-px {
     padding: 1px;
+  }
+
+  .md\:p-20px {
+    padding: 20px;
   }
 
   .md\:py-0 {
@@ -14513,6 +13386,66 @@ table {
     padding-right: 2rem;
   }
 
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:py-14 {
+    padding-top: 3, 5rem;
+    padding-bottom: 3, 5rem;
+  }
+
+  .md\:px-14 {
+    padding-left: 3, 5rem;
+    padding-right: 3, 5rem;
+  }
+
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:py-18 {
+    padding-top: 4, 5rem;
+    padding-bottom: 4, 5rem;
+  }
+
+  .md\:px-18 {
+    padding-left: 4, 5rem;
+    padding-right: 4, 5rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .md\:py-px {
     padding-top: 1px;
     padding-bottom: 1px;
@@ -14521,6 +13454,16 @@ table {
   .md\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .md\:py-20px {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .md\:px-20px {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .md\:pt-0 {
@@ -14635,6 +13578,102 @@ table {
     padding-left: 2rem;
   }
 
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .md\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .md\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .md\:pt-12 {
+    padding-top: 3rem;
+  }
+
+  .md\:pr-12 {
+    padding-right: 3rem;
+  }
+
+  .md\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
+  .md\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .md\:pt-14 {
+    padding-top: 3, 5rem;
+  }
+
+  .md\:pr-14 {
+    padding-right: 3, 5rem;
+  }
+
+  .md\:pb-14 {
+    padding-bottom: 3, 5rem;
+  }
+
+  .md\:pl-14 {
+    padding-left: 3, 5rem;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .md\:pr-16 {
+    padding-right: 4rem;
+  }
+
+  .md\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .md\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .md\:pt-18 {
+    padding-top: 4, 5rem;
+  }
+
+  .md\:pr-18 {
+    padding-right: 4, 5rem;
+  }
+
+  .md\:pb-18 {
+    padding-bottom: 4, 5rem;
+  }
+
+  .md\:pl-18 {
+    padding-left: 4, 5rem;
+  }
+
+  .md\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .md\:pr-20 {
+    padding-right: 5rem;
+  }
+
+  .md\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .md\:pl-20 {
+    padding-left: 5rem;
+  }
+
   .md\:pt-px {
     padding-top: 1px;
   }
@@ -14649,6 +13688,22 @@ table {
 
   .md\:pl-px {
     padding-left: 1px;
+  }
+
+  .md\:pt-20px {
+    padding-top: 20px;
+  }
+
+  .md\:pr-20px {
+    padding-right: 20px;
+  }
+
+  .md\:pb-20px {
+    padding-bottom: 20px;
+  }
+
+  .md\:pl-20px {
+    padding-left: 20px;
   }
 
   .md\:pointer-events-none {
@@ -15427,332 +14482,12 @@ table {
     color: #ffebef;
   }
 
-  .md\:active\:text-transparent:active {
-    color: transparent;
-  }
-
-  .md\:active\:text-black-doubledeep:active {
-    color: #22292f;
-  }
-
-  .md\:active\:text-black-deep:active {
-    color: #22292f;
-  }
-
-  .md\:active\:text-black-base:active {
-    color: #22292f;
-  }
-
-  .md\:active\:text-black-light:active {
-    color: #22292f;
-  }
-
-  .md\:active\:text-black-doublelight:active {
-    color: #22292f;
-  }
-
-  .md\:active\:text-darkblue:active {
-    color: #222c2f;
-  }
-
-  .md\:active\:text-darkgreen:active {
-    color: ##222F2F;
-  }
-
-  .md\:active\:text-darkred:active {
-    color: #2f2224;
-  }
-
-  .md\:active\:text-black:active {
-    color: #22292f;
-  }
-
-  .md\:active\:text-grey-darkest:active {
-    color: #3d4852;
-  }
-
-  .md\:active\:text-grey-darker:active {
-    color: #606f7b;
-  }
-
-  .md\:active\:text-grey-dark:active {
-    color: #8795a1;
-  }
-
-  .md\:active\:text-grey:active {
-    color: #b8c2cc;
-  }
-
-  .md\:active\:text-grey-light:active {
-    color: #dae1e7;
-  }
-
-  .md\:active\:text-grey-lighter:active {
-    color: #f1f5f8;
-  }
-
-  .md\:active\:text-grey-lightest:active {
-    color: #f8fafc;
-  }
-
-  .md\:active\:text-white:active {
-    color: #fff;
-  }
-
-  .md\:active\:text-red-darkest:active {
-    color: #3b0d0c;
-  }
-
-  .md\:active\:text-red-darker:active {
-    color: #621b18;
-  }
-
-  .md\:active\:text-red-dark:active {
-    color: #cc1f1a;
-  }
-
-  .md\:active\:text-red:active {
-    color: #e3342f;
-  }
-
-  .md\:active\:text-red-light:active {
-    color: #ef5753;
-  }
-
-  .md\:active\:text-red-lighter:active {
-    color: #f9acaa;
-  }
-
-  .md\:active\:text-red-lightest:active {
-    color: #fcebea;
-  }
-
-  .md\:active\:text-orange-darkest:active {
-    color: #462a16;
-  }
-
-  .md\:active\:text-orange-darker:active {
-    color: #613b1f;
-  }
-
-  .md\:active\:text-orange-dark:active {
-    color: #de751f;
-  }
-
-  .md\:active\:text-orange:active {
-    color: #f6993f;
-  }
-
-  .md\:active\:text-orange-light:active {
-    color: #faad63;
-  }
-
-  .md\:active\:text-orange-lighter:active {
-    color: #fcd9b6;
-  }
-
-  .md\:active\:text-orange-lightest:active {
-    color: #fff5eb;
-  }
-
-  .md\:active\:text-yellow-darkest:active {
-    color: #453411;
-  }
-
-  .md\:active\:text-yellow-darker:active {
-    color: #684f1d;
-  }
-
-  .md\:active\:text-yellow-dark:active {
-    color: #f2d024;
-  }
-
-  .md\:active\:text-yellow:active {
-    color: #ffed4a;
-  }
-
-  .md\:active\:text-yellow-light:active {
-    color: #fff382;
-  }
-
-  .md\:active\:text-yellow-lighter:active {
-    color: #fff9c2;
-  }
-
-  .md\:active\:text-yellow-lightest:active {
-    color: #fcfbeb;
-  }
-
-  .md\:active\:text-green-darkest:active {
-    color: #0f2f21;
-  }
-
-  .md\:active\:text-green-darker:active {
-    color: #1a4731;
-  }
-
-  .md\:active\:text-green-dark:active {
-    color: #1f9d55;
-  }
-
-  .md\:active\:text-green:active {
-    color: #38c172;
-  }
-
-  .md\:active\:text-green-light:active {
-    color: #51d88a;
-  }
-
-  .md\:active\:text-green-lighter:active {
-    color: #a2f5bf;
-  }
-
-  .md\:active\:text-green-lightest:active {
-    color: #e3fcec;
-  }
-
-  .md\:active\:text-teal-darkest:active {
-    color: #0d3331;
-  }
-
-  .md\:active\:text-teal-darker:active {
-    color: #20504f;
-  }
-
-  .md\:active\:text-teal-dark:active {
-    color: #38a89d;
-  }
-
-  .md\:active\:text-teal:active {
-    color: #4dc0b5;
-  }
-
-  .md\:active\:text-teal-light:active {
-    color: #64d5ca;
-  }
-
-  .md\:active\:text-teal-lighter:active {
-    color: #a0f0ed;
-  }
-
-  .md\:active\:text-teal-lightest:active {
-    color: #e8fffe;
-  }
-
-  .md\:active\:text-blue-darkest:active {
-    color: #12283a;
-  }
-
-  .md\:active\:text-blue-darker:active {
-    color: #1c3d5a;
-  }
-
-  .md\:active\:text-blue-dark:active {
-    color: #2779bd;
-  }
-
-  .md\:active\:text-blue:active {
-    color: #3490dc;
-  }
-
-  .md\:active\:text-blue-light:active {
-    color: #6cb2eb;
-  }
-
-  .md\:active\:text-blue-lighter:active {
-    color: #bcdefa;
-  }
-
-  .md\:active\:text-blue-lightest:active {
-    color: #eff8ff;
-  }
-
-  .md\:active\:text-indigo-darkest:active {
-    color: #191e38;
-  }
-
-  .md\:active\:text-indigo-darker:active {
-    color: #2f365f;
-  }
-
-  .md\:active\:text-indigo-dark:active {
-    color: #5661b3;
-  }
-
-  .md\:active\:text-indigo:active {
-    color: #6574cd;
-  }
-
-  .md\:active\:text-indigo-light:active {
-    color: #7886d7;
-  }
-
-  .md\:active\:text-indigo-lighter:active {
-    color: #b2b7ff;
-  }
-
-  .md\:active\:text-indigo-lightest:active {
-    color: #e6e8ff;
-  }
-
-  .md\:active\:text-purple-darkest:active {
-    color: #21183c;
-  }
-
-  .md\:active\:text-purple-darker:active {
-    color: #382b5f;
-  }
-
-  .md\:active\:text-purple-dark:active {
-    color: #794acf;
-  }
-
-  .md\:active\:text-purple:active {
-    color: #9561e2;
-  }
-
-  .md\:active\:text-purple-light:active {
-    color: #a779e9;
-  }
-
-  .md\:active\:text-purple-lighter:active {
-    color: #d6bbfc;
-  }
-
-  .md\:active\:text-purple-lightest:active {
-    color: #f3ebff;
-  }
-
-  .md\:active\:text-pink-darkest:active {
-    color: #451225;
-  }
-
-  .md\:active\:text-pink-darker:active {
-    color: #6f213f;
-  }
-
-  .md\:active\:text-pink-dark:active {
-    color: #eb5286;
-  }
-
-  .md\:active\:text-pink:active {
-    color: #f66d9b;
-  }
-
-  .md\:active\:text-pink-light:active {
-    color: #fa7ea8;
-  }
-
-  .md\:active\:text-pink-lighter:active {
-    color: #ffbbca;
-  }
-
-  .md\:active\:text-pink-lightest:active {
-    color: #ffebef;
+  .md\:text-xxs {
+    font-size: .25rem;
   }
 
   .md\:text-xs {
-    font-size: .75rem;
+    font-size: .5rem;
   }
 
   .md\:text-sm {
@@ -15785,6 +14520,18 @@ table {
 
   .md\:text-5xl {
     font-size: 3rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 5rem;
+  }
+
+  .md\:text-8xl {
+    font-size: 6rem;
   }
 
   .md\:italic {
@@ -16015,6 +14762,14 @@ table {
 
   .md\:w-64 {
     width: 16rem;
+  }
+
+  .md\:w-80 {
+    width: 80%;
+  }
+
+  .md\:w-90 {
+    width: 90%;
   }
 
   .md\:w-auto {
@@ -16776,330 +15531,6 @@ table {
     background-color: #ffebef;
   }
 
-  .lg\:active\:bg-transparent:active {
-    background-color: transparent;
-  }
-
-  .lg\:active\:bg-black-doubledeep:active {
-    background-color: #22292f;
-  }
-
-  .lg\:active\:bg-black-deep:active {
-    background-color: #22292f;
-  }
-
-  .lg\:active\:bg-black-base:active {
-    background-color: #22292f;
-  }
-
-  .lg\:active\:bg-black-light:active {
-    background-color: #22292f;
-  }
-
-  .lg\:active\:bg-black-doublelight:active {
-    background-color: #22292f;
-  }
-
-  .lg\:active\:bg-darkblue:active {
-    background-color: #222c2f;
-  }
-
-  .lg\:active\:bg-darkgreen:active {
-    background-color: ##222F2F;
-  }
-
-  .lg\:active\:bg-darkred:active {
-    background-color: #2f2224;
-  }
-
-  .lg\:active\:bg-black:active {
-    background-color: #22292f;
-  }
-
-  .lg\:active\:bg-grey-darkest:active {
-    background-color: #3d4852;
-  }
-
-  .lg\:active\:bg-grey-darker:active {
-    background-color: #606f7b;
-  }
-
-  .lg\:active\:bg-grey-dark:active {
-    background-color: #8795a1;
-  }
-
-  .lg\:active\:bg-grey:active {
-    background-color: #b8c2cc;
-  }
-
-  .lg\:active\:bg-grey-light:active {
-    background-color: #dae1e7;
-  }
-
-  .lg\:active\:bg-grey-lighter:active {
-    background-color: #f1f5f8;
-  }
-
-  .lg\:active\:bg-grey-lightest:active {
-    background-color: #f8fafc;
-  }
-
-  .lg\:active\:bg-white:active {
-    background-color: #fff;
-  }
-
-  .lg\:active\:bg-red-darkest:active {
-    background-color: #3b0d0c;
-  }
-
-  .lg\:active\:bg-red-darker:active {
-    background-color: #621b18;
-  }
-
-  .lg\:active\:bg-red-dark:active {
-    background-color: #cc1f1a;
-  }
-
-  .lg\:active\:bg-red:active {
-    background-color: #e3342f;
-  }
-
-  .lg\:active\:bg-red-light:active {
-    background-color: #ef5753;
-  }
-
-  .lg\:active\:bg-red-lighter:active {
-    background-color: #f9acaa;
-  }
-
-  .lg\:active\:bg-red-lightest:active {
-    background-color: #fcebea;
-  }
-
-  .lg\:active\:bg-orange-darkest:active {
-    background-color: #462a16;
-  }
-
-  .lg\:active\:bg-orange-darker:active {
-    background-color: #613b1f;
-  }
-
-  .lg\:active\:bg-orange-dark:active {
-    background-color: #de751f;
-  }
-
-  .lg\:active\:bg-orange:active {
-    background-color: #f6993f;
-  }
-
-  .lg\:active\:bg-orange-light:active {
-    background-color: #faad63;
-  }
-
-  .lg\:active\:bg-orange-lighter:active {
-    background-color: #fcd9b6;
-  }
-
-  .lg\:active\:bg-orange-lightest:active {
-    background-color: #fff5eb;
-  }
-
-  .lg\:active\:bg-yellow-darkest:active {
-    background-color: #453411;
-  }
-
-  .lg\:active\:bg-yellow-darker:active {
-    background-color: #684f1d;
-  }
-
-  .lg\:active\:bg-yellow-dark:active {
-    background-color: #f2d024;
-  }
-
-  .lg\:active\:bg-yellow:active {
-    background-color: #ffed4a;
-  }
-
-  .lg\:active\:bg-yellow-light:active {
-    background-color: #fff382;
-  }
-
-  .lg\:active\:bg-yellow-lighter:active {
-    background-color: #fff9c2;
-  }
-
-  .lg\:active\:bg-yellow-lightest:active {
-    background-color: #fcfbeb;
-  }
-
-  .lg\:active\:bg-green-darkest:active {
-    background-color: #0f2f21;
-  }
-
-  .lg\:active\:bg-green-darker:active {
-    background-color: #1a4731;
-  }
-
-  .lg\:active\:bg-green-dark:active {
-    background-color: #1f9d55;
-  }
-
-  .lg\:active\:bg-green:active {
-    background-color: #38c172;
-  }
-
-  .lg\:active\:bg-green-light:active {
-    background-color: #51d88a;
-  }
-
-  .lg\:active\:bg-green-lighter:active {
-    background-color: #a2f5bf;
-  }
-
-  .lg\:active\:bg-green-lightest:active {
-    background-color: #e3fcec;
-  }
-
-  .lg\:active\:bg-teal-darkest:active {
-    background-color: #0d3331;
-  }
-
-  .lg\:active\:bg-teal-darker:active {
-    background-color: #20504f;
-  }
-
-  .lg\:active\:bg-teal-dark:active {
-    background-color: #38a89d;
-  }
-
-  .lg\:active\:bg-teal:active {
-    background-color: #4dc0b5;
-  }
-
-  .lg\:active\:bg-teal-light:active {
-    background-color: #64d5ca;
-  }
-
-  .lg\:active\:bg-teal-lighter:active {
-    background-color: #a0f0ed;
-  }
-
-  .lg\:active\:bg-teal-lightest:active {
-    background-color: #e8fffe;
-  }
-
-  .lg\:active\:bg-blue-darkest:active {
-    background-color: #12283a;
-  }
-
-  .lg\:active\:bg-blue-darker:active {
-    background-color: #1c3d5a;
-  }
-
-  .lg\:active\:bg-blue-dark:active {
-    background-color: #2779bd;
-  }
-
-  .lg\:active\:bg-blue:active {
-    background-color: #3490dc;
-  }
-
-  .lg\:active\:bg-blue-light:active {
-    background-color: #6cb2eb;
-  }
-
-  .lg\:active\:bg-blue-lighter:active {
-    background-color: #bcdefa;
-  }
-
-  .lg\:active\:bg-blue-lightest:active {
-    background-color: #eff8ff;
-  }
-
-  .lg\:active\:bg-indigo-darkest:active {
-    background-color: #191e38;
-  }
-
-  .lg\:active\:bg-indigo-darker:active {
-    background-color: #2f365f;
-  }
-
-  .lg\:active\:bg-indigo-dark:active {
-    background-color: #5661b3;
-  }
-
-  .lg\:active\:bg-indigo:active {
-    background-color: #6574cd;
-  }
-
-  .lg\:active\:bg-indigo-light:active {
-    background-color: #7886d7;
-  }
-
-  .lg\:active\:bg-indigo-lighter:active {
-    background-color: #b2b7ff;
-  }
-
-  .lg\:active\:bg-indigo-lightest:active {
-    background-color: #e6e8ff;
-  }
-
-  .lg\:active\:bg-purple-darkest:active {
-    background-color: #21183c;
-  }
-
-  .lg\:active\:bg-purple-darker:active {
-    background-color: #382b5f;
-  }
-
-  .lg\:active\:bg-purple-dark:active {
-    background-color: #794acf;
-  }
-
-  .lg\:active\:bg-purple:active {
-    background-color: #9561e2;
-  }
-
-  .lg\:active\:bg-purple-light:active {
-    background-color: #a779e9;
-  }
-
-  .lg\:active\:bg-purple-lighter:active {
-    background-color: #d6bbfc;
-  }
-
-  .lg\:active\:bg-purple-lightest:active {
-    background-color: #f3ebff;
-  }
-
-  .lg\:active\:bg-pink-darkest:active {
-    background-color: #451225;
-  }
-
-  .lg\:active\:bg-pink-darker:active {
-    background-color: #6f213f;
-  }
-
-  .lg\:active\:bg-pink-dark:active {
-    background-color: #eb5286;
-  }
-
-  .lg\:active\:bg-pink:active {
-    background-color: #f66d9b;
-  }
-
-  .lg\:active\:bg-pink-light:active {
-    background-color: #fa7ea8;
-  }
-
-  .lg\:active\:bg-pink-lighter:active {
-    background-color: #ffbbca;
-  }
-
-  .lg\:active\:bg-pink-lightest:active {
-    background-color: #ffebef;
-  }
-
   .lg\:bg-bottom {
     background-position: bottom;
   }
@@ -17812,330 +16243,6 @@ table {
     border-color: #ffebef;
   }
 
-  .lg\:active\:border-transparent:active {
-    border-color: transparent;
-  }
-
-  .lg\:active\:border-black-doubledeep:active {
-    border-color: #22292f;
-  }
-
-  .lg\:active\:border-black-deep:active {
-    border-color: #22292f;
-  }
-
-  .lg\:active\:border-black-base:active {
-    border-color: #22292f;
-  }
-
-  .lg\:active\:border-black-light:active {
-    border-color: #22292f;
-  }
-
-  .lg\:active\:border-black-doublelight:active {
-    border-color: #22292f;
-  }
-
-  .lg\:active\:border-darkblue:active {
-    border-color: #222c2f;
-  }
-
-  .lg\:active\:border-darkgreen:active {
-    border-color: ##222F2F;
-  }
-
-  .lg\:active\:border-darkred:active {
-    border-color: #2f2224;
-  }
-
-  .lg\:active\:border-black:active {
-    border-color: #22292f;
-  }
-
-  .lg\:active\:border-grey-darkest:active {
-    border-color: #3d4852;
-  }
-
-  .lg\:active\:border-grey-darker:active {
-    border-color: #606f7b;
-  }
-
-  .lg\:active\:border-grey-dark:active {
-    border-color: #8795a1;
-  }
-
-  .lg\:active\:border-grey:active {
-    border-color: #b8c2cc;
-  }
-
-  .lg\:active\:border-grey-light:active {
-    border-color: #dae1e7;
-  }
-
-  .lg\:active\:border-grey-lighter:active {
-    border-color: #f1f5f8;
-  }
-
-  .lg\:active\:border-grey-lightest:active {
-    border-color: #f8fafc;
-  }
-
-  .lg\:active\:border-white:active {
-    border-color: #fff;
-  }
-
-  .lg\:active\:border-red-darkest:active {
-    border-color: #3b0d0c;
-  }
-
-  .lg\:active\:border-red-darker:active {
-    border-color: #621b18;
-  }
-
-  .lg\:active\:border-red-dark:active {
-    border-color: #cc1f1a;
-  }
-
-  .lg\:active\:border-red:active {
-    border-color: #e3342f;
-  }
-
-  .lg\:active\:border-red-light:active {
-    border-color: #ef5753;
-  }
-
-  .lg\:active\:border-red-lighter:active {
-    border-color: #f9acaa;
-  }
-
-  .lg\:active\:border-red-lightest:active {
-    border-color: #fcebea;
-  }
-
-  .lg\:active\:border-orange-darkest:active {
-    border-color: #462a16;
-  }
-
-  .lg\:active\:border-orange-darker:active {
-    border-color: #613b1f;
-  }
-
-  .lg\:active\:border-orange-dark:active {
-    border-color: #de751f;
-  }
-
-  .lg\:active\:border-orange:active {
-    border-color: #f6993f;
-  }
-
-  .lg\:active\:border-orange-light:active {
-    border-color: #faad63;
-  }
-
-  .lg\:active\:border-orange-lighter:active {
-    border-color: #fcd9b6;
-  }
-
-  .lg\:active\:border-orange-lightest:active {
-    border-color: #fff5eb;
-  }
-
-  .lg\:active\:border-yellow-darkest:active {
-    border-color: #453411;
-  }
-
-  .lg\:active\:border-yellow-darker:active {
-    border-color: #684f1d;
-  }
-
-  .lg\:active\:border-yellow-dark:active {
-    border-color: #f2d024;
-  }
-
-  .lg\:active\:border-yellow:active {
-    border-color: #ffed4a;
-  }
-
-  .lg\:active\:border-yellow-light:active {
-    border-color: #fff382;
-  }
-
-  .lg\:active\:border-yellow-lighter:active {
-    border-color: #fff9c2;
-  }
-
-  .lg\:active\:border-yellow-lightest:active {
-    border-color: #fcfbeb;
-  }
-
-  .lg\:active\:border-green-darkest:active {
-    border-color: #0f2f21;
-  }
-
-  .lg\:active\:border-green-darker:active {
-    border-color: #1a4731;
-  }
-
-  .lg\:active\:border-green-dark:active {
-    border-color: #1f9d55;
-  }
-
-  .lg\:active\:border-green:active {
-    border-color: #38c172;
-  }
-
-  .lg\:active\:border-green-light:active {
-    border-color: #51d88a;
-  }
-
-  .lg\:active\:border-green-lighter:active {
-    border-color: #a2f5bf;
-  }
-
-  .lg\:active\:border-green-lightest:active {
-    border-color: #e3fcec;
-  }
-
-  .lg\:active\:border-teal-darkest:active {
-    border-color: #0d3331;
-  }
-
-  .lg\:active\:border-teal-darker:active {
-    border-color: #20504f;
-  }
-
-  .lg\:active\:border-teal-dark:active {
-    border-color: #38a89d;
-  }
-
-  .lg\:active\:border-teal:active {
-    border-color: #4dc0b5;
-  }
-
-  .lg\:active\:border-teal-light:active {
-    border-color: #64d5ca;
-  }
-
-  .lg\:active\:border-teal-lighter:active {
-    border-color: #a0f0ed;
-  }
-
-  .lg\:active\:border-teal-lightest:active {
-    border-color: #e8fffe;
-  }
-
-  .lg\:active\:border-blue-darkest:active {
-    border-color: #12283a;
-  }
-
-  .lg\:active\:border-blue-darker:active {
-    border-color: #1c3d5a;
-  }
-
-  .lg\:active\:border-blue-dark:active {
-    border-color: #2779bd;
-  }
-
-  .lg\:active\:border-blue:active {
-    border-color: #3490dc;
-  }
-
-  .lg\:active\:border-blue-light:active {
-    border-color: #6cb2eb;
-  }
-
-  .lg\:active\:border-blue-lighter:active {
-    border-color: #bcdefa;
-  }
-
-  .lg\:active\:border-blue-lightest:active {
-    border-color: #eff8ff;
-  }
-
-  .lg\:active\:border-indigo-darkest:active {
-    border-color: #191e38;
-  }
-
-  .lg\:active\:border-indigo-darker:active {
-    border-color: #2f365f;
-  }
-
-  .lg\:active\:border-indigo-dark:active {
-    border-color: #5661b3;
-  }
-
-  .lg\:active\:border-indigo:active {
-    border-color: #6574cd;
-  }
-
-  .lg\:active\:border-indigo-light:active {
-    border-color: #7886d7;
-  }
-
-  .lg\:active\:border-indigo-lighter:active {
-    border-color: #b2b7ff;
-  }
-
-  .lg\:active\:border-indigo-lightest:active {
-    border-color: #e6e8ff;
-  }
-
-  .lg\:active\:border-purple-darkest:active {
-    border-color: #21183c;
-  }
-
-  .lg\:active\:border-purple-darker:active {
-    border-color: #382b5f;
-  }
-
-  .lg\:active\:border-purple-dark:active {
-    border-color: #794acf;
-  }
-
-  .lg\:active\:border-purple:active {
-    border-color: #9561e2;
-  }
-
-  .lg\:active\:border-purple-light:active {
-    border-color: #a779e9;
-  }
-
-  .lg\:active\:border-purple-lighter:active {
-    border-color: #d6bbfc;
-  }
-
-  .lg\:active\:border-purple-lightest:active {
-    border-color: #f3ebff;
-  }
-
-  .lg\:active\:border-pink-darkest:active {
-    border-color: #451225;
-  }
-
-  .lg\:active\:border-pink-darker:active {
-    border-color: #6f213f;
-  }
-
-  .lg\:active\:border-pink-dark:active {
-    border-color: #eb5286;
-  }
-
-  .lg\:active\:border-pink:active {
-    border-color: #f66d9b;
-  }
-
-  .lg\:active\:border-pink-light:active {
-    border-color: #fa7ea8;
-  }
-
-  .lg\:active\:border-pink-lighter:active {
-    border-color: #ffbbca;
-  }
-
-  .lg\:active\:border-pink-lightest:active {
-    border-color: #ffebef;
-  }
-
   .lg\:rounded-none {
     border-radius: 0;
   }
@@ -18150,6 +16257,14 @@ table {
 
   .lg\:rounded-lg {
     border-radius: .5rem;
+  }
+
+  .lg\:rounded-xl {
+    border-radius: .75rem;
+  }
+
+  .lg\:rounded-xxl {
+    border-radius: 1rem;
   }
 
   .lg\:rounded-full {
@@ -18236,6 +16351,46 @@ table {
     border-bottom-left-radius: .5rem;
   }
 
+  .lg\:rounded-t-xl {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+  }
+
+  .lg\:rounded-r-xl {
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+  }
+
+  .lg\:rounded-b-xl {
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .lg\:rounded-l-xl {
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .lg\:rounded-t-xxl {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .lg\:rounded-r-xxl {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .lg\:rounded-b-xxl {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .lg\:rounded-l-xxl {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
   .lg\:rounded-t-full {
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
@@ -18320,6 +16475,38 @@ table {
     border-bottom-left-radius: .5rem;
   }
 
+  .lg\:rounded-tl-xl {
+    border-top-left-radius: .75rem;
+  }
+
+  .lg\:rounded-tr-xl {
+    border-top-right-radius: .75rem;
+  }
+
+  .lg\:rounded-br-xl {
+    border-bottom-right-radius: .75rem;
+  }
+
+  .lg\:rounded-bl-xl {
+    border-bottom-left-radius: .75rem;
+  }
+
+  .lg\:rounded-tl-xxl {
+    border-top-left-radius: 1rem;
+  }
+
+  .lg\:rounded-tr-xxl {
+    border-top-right-radius: 1rem;
+  }
+
+  .lg\:rounded-br-xxl {
+    border-bottom-right-radius: 1rem;
+  }
+
+  .lg\:rounded-bl-xxl {
+    border-bottom-left-radius: 1rem;
+  }
+
   .lg\:rounded-tl-full {
     border-top-left-radius: 9999px;
   }
@@ -18360,8 +16547,16 @@ table {
     border-width: 2px;
   }
 
+  .lg\:border-3 {
+    border-width: 3px;
+  }
+
   .lg\:border-4 {
     border-width: 4px;
+  }
+
+  .lg\:border-6 {
+    border-width: 6px;
   }
 
   .lg\:border-8 {
@@ -18404,6 +16599,22 @@ table {
     border-left-width: 2px;
   }
 
+  .lg\:border-t-3 {
+    border-top-width: 3px;
+  }
+
+  .lg\:border-r-3 {
+    border-right-width: 3px;
+  }
+
+  .lg\:border-b-3 {
+    border-bottom-width: 3px;
+  }
+
+  .lg\:border-l-3 {
+    border-left-width: 3px;
+  }
+
   .lg\:border-t-4 {
     border-top-width: 4px;
   }
@@ -18418,6 +16629,22 @@ table {
 
   .lg\:border-l-4 {
     border-left-width: 4px;
+  }
+
+  .lg\:border-t-6 {
+    border-top-width: 6px;
+  }
+
+  .lg\:border-r-6 {
+    border-right-width: 6px;
+  }
+
+  .lg\:border-b-6 {
+    border-bottom-width: 6px;
+  }
+
+  .lg\:border-l-6 {
+    border-left-width: 6px;
   }
 
   .lg\:border-t-8 {
@@ -18671,11 +16898,11 @@ table {
   }
 
   .lg\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Open Sans, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .lg\:font-serif {
-    font-family: Georgia, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, serif;
+    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .lg\:font-mono {
@@ -18754,42 +16981,6 @@ table {
     font-weight: 900;
   }
 
-  .lg\:active\:font-hairline:active {
-    font-weight: 100;
-  }
-
-  .lg\:active\:font-thin:active {
-    font-weight: 200;
-  }
-
-  .lg\:active\:font-light:active {
-    font-weight: 300;
-  }
-
-  .lg\:active\:font-normal:active {
-    font-weight: 400;
-  }
-
-  .lg\:active\:font-medium:active {
-    font-weight: 500;
-  }
-
-  .lg\:active\:font-semibold:active {
-    font-weight: 600;
-  }
-
-  .lg\:active\:font-bold:active {
-    font-weight: 700;
-  }
-
-  .lg\:active\:font-extrabold:active {
-    font-weight: 800;
-  }
-
-  .lg\:active\:font-black:active {
-    font-weight: 900;
-  }
-
   .lg\:h-1 {
     height: .25rem;
   }
@@ -18838,8 +17029,20 @@ table {
     height: 12rem;
   }
 
+  .lg\:h-50 {
+    height: 50vh;
+  }
+
   .lg\:h-64 {
     height: 16rem;
+  }
+
+  .lg\:h-70 {
+    height: 70vh;
+  }
+
+  .lg\:h-80 {
+    height: 80vh;
   }
 
   .lg\:h-90 {
@@ -18856,6 +17059,14 @@ table {
 
   .lg\:h-full {
     height: 100%;
+  }
+
+  .lg\:h-1\/3 {
+    height: 33.3vh;
+  }
+
+  .lg\:h-2\/3 {
+    height: 66.6vh;
   }
 
   .lg\:h-screen {
@@ -18904,6 +17115,30 @@ table {
 
   .lg\:m-8 {
     margin: 2rem;
+  }
+
+  .lg\:m-10 {
+    margin: 2.5rem;
+  }
+
+  .lg\:m-12 {
+    margin: 3rem;
+  }
+
+  .lg\:m-14 {
+    margin: 3, 5rem;
+  }
+
+  .lg\:m-16 {
+    margin: 4rem;
+  }
+
+  .lg\:m-18 {
+    margin: 4, 5rem;
+  }
+
+  .lg\:m-20 {
+    margin: 5rem;
   }
 
   .lg\:m-auto {
@@ -18982,6 +17217,66 @@ table {
   .lg\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .lg\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .lg\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .lg\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .lg\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .lg\:my-14 {
+    margin-top: 3, 5rem;
+    margin-bottom: 3, 5rem;
+  }
+
+  .lg\:mx-14 {
+    margin-left: 3, 5rem;
+    margin-right: 3, 5rem;
+  }
+
+  .lg\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .lg\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .lg\:my-18 {
+    margin-top: 4, 5rem;
+    margin-bottom: 4, 5rem;
+  }
+
+  .lg\:mx-18 {
+    margin-left: 4, 5rem;
+    margin-right: 4, 5rem;
+  }
+
+  .lg\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .lg\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .lg\:my-auto {
@@ -19114,6 +17409,102 @@ table {
 
   .lg\:ml-8 {
     margin-left: 2rem;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .lg\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .lg\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .lg\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .lg\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .lg\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .lg\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .lg\:ml-12 {
+    margin-left: 3rem;
+  }
+
+  .lg\:mt-14 {
+    margin-top: 3, 5rem;
+  }
+
+  .lg\:mr-14 {
+    margin-right: 3, 5rem;
+  }
+
+  .lg\:mb-14 {
+    margin-bottom: 3, 5rem;
+  }
+
+  .lg\:ml-14 {
+    margin-left: 3, 5rem;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .lg\:mr-16 {
+    margin-right: 4rem;
+  }
+
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .lg\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .lg\:mt-18 {
+    margin-top: 4, 5rem;
+  }
+
+  .lg\:mr-18 {
+    margin-right: 4, 5rem;
+  }
+
+  .lg\:mb-18 {
+    margin-bottom: 4, 5rem;
+  }
+
+  .lg\:ml-18 {
+    margin-left: 4, 5rem;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .lg\:mr-20 {
+    margin-right: 5rem;
+  }
+
+  .lg\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .lg\:ml-20 {
+    margin-left: 5rem;
   }
 
   .lg\:mt-auto {
@@ -19560,8 +17951,36 @@ table {
     padding: 2rem;
   }
 
+  .lg\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .lg\:p-12 {
+    padding: 3rem;
+  }
+
+  .lg\:p-14 {
+    padding: 3, 5rem;
+  }
+
+  .lg\:p-16 {
+    padding: 4rem;
+  }
+
+  .lg\:p-18 {
+    padding: 4, 5rem;
+  }
+
+  .lg\:p-20 {
+    padding: 5rem;
+  }
+
   .lg\:p-px {
     padding: 1px;
+  }
+
+  .lg\:p-20px {
+    padding: 20px;
   }
 
   .lg\:py-0 {
@@ -19634,6 +18053,66 @@ table {
     padding-right: 2rem;
   }
 
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .lg\:py-14 {
+    padding-top: 3, 5rem;
+    padding-bottom: 3, 5rem;
+  }
+
+  .lg\:px-14 {
+    padding-left: 3, 5rem;
+    padding-right: 3, 5rem;
+  }
+
+  .lg\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:py-18 {
+    padding-top: 4, 5rem;
+    padding-bottom: 4, 5rem;
+  }
+
+  .lg\:px-18 {
+    padding-left: 4, 5rem;
+    padding-right: 4, 5rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .lg\:py-px {
     padding-top: 1px;
     padding-bottom: 1px;
@@ -19642,6 +18121,16 @@ table {
   .lg\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .lg\:py-20px {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .lg\:px-20px {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .lg\:pt-0 {
@@ -19756,6 +18245,102 @@ table {
     padding-left: 2rem;
   }
 
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .lg\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .lg\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .lg\:pt-12 {
+    padding-top: 3rem;
+  }
+
+  .lg\:pr-12 {
+    padding-right: 3rem;
+  }
+
+  .lg\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
+  .lg\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .lg\:pt-14 {
+    padding-top: 3, 5rem;
+  }
+
+  .lg\:pr-14 {
+    padding-right: 3, 5rem;
+  }
+
+  .lg\:pb-14 {
+    padding-bottom: 3, 5rem;
+  }
+
+  .lg\:pl-14 {
+    padding-left: 3, 5rem;
+  }
+
+  .lg\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .lg\:pr-16 {
+    padding-right: 4rem;
+  }
+
+  .lg\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .lg\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .lg\:pt-18 {
+    padding-top: 4, 5rem;
+  }
+
+  .lg\:pr-18 {
+    padding-right: 4, 5rem;
+  }
+
+  .lg\:pb-18 {
+    padding-bottom: 4, 5rem;
+  }
+
+  .lg\:pl-18 {
+    padding-left: 4, 5rem;
+  }
+
+  .lg\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .lg\:pr-20 {
+    padding-right: 5rem;
+  }
+
+  .lg\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .lg\:pl-20 {
+    padding-left: 5rem;
+  }
+
   .lg\:pt-px {
     padding-top: 1px;
   }
@@ -19770,6 +18355,22 @@ table {
 
   .lg\:pl-px {
     padding-left: 1px;
+  }
+
+  .lg\:pt-20px {
+    padding-top: 20px;
+  }
+
+  .lg\:pr-20px {
+    padding-right: 20px;
+  }
+
+  .lg\:pb-20px {
+    padding-bottom: 20px;
+  }
+
+  .lg\:pl-20px {
+    padding-left: 20px;
   }
 
   .lg\:pointer-events-none {
@@ -20548,332 +19149,12 @@ table {
     color: #ffebef;
   }
 
-  .lg\:active\:text-transparent:active {
-    color: transparent;
-  }
-
-  .lg\:active\:text-black-doubledeep:active {
-    color: #22292f;
-  }
-
-  .lg\:active\:text-black-deep:active {
-    color: #22292f;
-  }
-
-  .lg\:active\:text-black-base:active {
-    color: #22292f;
-  }
-
-  .lg\:active\:text-black-light:active {
-    color: #22292f;
-  }
-
-  .lg\:active\:text-black-doublelight:active {
-    color: #22292f;
-  }
-
-  .lg\:active\:text-darkblue:active {
-    color: #222c2f;
-  }
-
-  .lg\:active\:text-darkgreen:active {
-    color: ##222F2F;
-  }
-
-  .lg\:active\:text-darkred:active {
-    color: #2f2224;
-  }
-
-  .lg\:active\:text-black:active {
-    color: #22292f;
-  }
-
-  .lg\:active\:text-grey-darkest:active {
-    color: #3d4852;
-  }
-
-  .lg\:active\:text-grey-darker:active {
-    color: #606f7b;
-  }
-
-  .lg\:active\:text-grey-dark:active {
-    color: #8795a1;
-  }
-
-  .lg\:active\:text-grey:active {
-    color: #b8c2cc;
-  }
-
-  .lg\:active\:text-grey-light:active {
-    color: #dae1e7;
-  }
-
-  .lg\:active\:text-grey-lighter:active {
-    color: #f1f5f8;
-  }
-
-  .lg\:active\:text-grey-lightest:active {
-    color: #f8fafc;
-  }
-
-  .lg\:active\:text-white:active {
-    color: #fff;
-  }
-
-  .lg\:active\:text-red-darkest:active {
-    color: #3b0d0c;
-  }
-
-  .lg\:active\:text-red-darker:active {
-    color: #621b18;
-  }
-
-  .lg\:active\:text-red-dark:active {
-    color: #cc1f1a;
-  }
-
-  .lg\:active\:text-red:active {
-    color: #e3342f;
-  }
-
-  .lg\:active\:text-red-light:active {
-    color: #ef5753;
-  }
-
-  .lg\:active\:text-red-lighter:active {
-    color: #f9acaa;
-  }
-
-  .lg\:active\:text-red-lightest:active {
-    color: #fcebea;
-  }
-
-  .lg\:active\:text-orange-darkest:active {
-    color: #462a16;
-  }
-
-  .lg\:active\:text-orange-darker:active {
-    color: #613b1f;
-  }
-
-  .lg\:active\:text-orange-dark:active {
-    color: #de751f;
-  }
-
-  .lg\:active\:text-orange:active {
-    color: #f6993f;
-  }
-
-  .lg\:active\:text-orange-light:active {
-    color: #faad63;
-  }
-
-  .lg\:active\:text-orange-lighter:active {
-    color: #fcd9b6;
-  }
-
-  .lg\:active\:text-orange-lightest:active {
-    color: #fff5eb;
-  }
-
-  .lg\:active\:text-yellow-darkest:active {
-    color: #453411;
-  }
-
-  .lg\:active\:text-yellow-darker:active {
-    color: #684f1d;
-  }
-
-  .lg\:active\:text-yellow-dark:active {
-    color: #f2d024;
-  }
-
-  .lg\:active\:text-yellow:active {
-    color: #ffed4a;
-  }
-
-  .lg\:active\:text-yellow-light:active {
-    color: #fff382;
-  }
-
-  .lg\:active\:text-yellow-lighter:active {
-    color: #fff9c2;
-  }
-
-  .lg\:active\:text-yellow-lightest:active {
-    color: #fcfbeb;
-  }
-
-  .lg\:active\:text-green-darkest:active {
-    color: #0f2f21;
-  }
-
-  .lg\:active\:text-green-darker:active {
-    color: #1a4731;
-  }
-
-  .lg\:active\:text-green-dark:active {
-    color: #1f9d55;
-  }
-
-  .lg\:active\:text-green:active {
-    color: #38c172;
-  }
-
-  .lg\:active\:text-green-light:active {
-    color: #51d88a;
-  }
-
-  .lg\:active\:text-green-lighter:active {
-    color: #a2f5bf;
-  }
-
-  .lg\:active\:text-green-lightest:active {
-    color: #e3fcec;
-  }
-
-  .lg\:active\:text-teal-darkest:active {
-    color: #0d3331;
-  }
-
-  .lg\:active\:text-teal-darker:active {
-    color: #20504f;
-  }
-
-  .lg\:active\:text-teal-dark:active {
-    color: #38a89d;
-  }
-
-  .lg\:active\:text-teal:active {
-    color: #4dc0b5;
-  }
-
-  .lg\:active\:text-teal-light:active {
-    color: #64d5ca;
-  }
-
-  .lg\:active\:text-teal-lighter:active {
-    color: #a0f0ed;
-  }
-
-  .lg\:active\:text-teal-lightest:active {
-    color: #e8fffe;
-  }
-
-  .lg\:active\:text-blue-darkest:active {
-    color: #12283a;
-  }
-
-  .lg\:active\:text-blue-darker:active {
-    color: #1c3d5a;
-  }
-
-  .lg\:active\:text-blue-dark:active {
-    color: #2779bd;
-  }
-
-  .lg\:active\:text-blue:active {
-    color: #3490dc;
-  }
-
-  .lg\:active\:text-blue-light:active {
-    color: #6cb2eb;
-  }
-
-  .lg\:active\:text-blue-lighter:active {
-    color: #bcdefa;
-  }
-
-  .lg\:active\:text-blue-lightest:active {
-    color: #eff8ff;
-  }
-
-  .lg\:active\:text-indigo-darkest:active {
-    color: #191e38;
-  }
-
-  .lg\:active\:text-indigo-darker:active {
-    color: #2f365f;
-  }
-
-  .lg\:active\:text-indigo-dark:active {
-    color: #5661b3;
-  }
-
-  .lg\:active\:text-indigo:active {
-    color: #6574cd;
-  }
-
-  .lg\:active\:text-indigo-light:active {
-    color: #7886d7;
-  }
-
-  .lg\:active\:text-indigo-lighter:active {
-    color: #b2b7ff;
-  }
-
-  .lg\:active\:text-indigo-lightest:active {
-    color: #e6e8ff;
-  }
-
-  .lg\:active\:text-purple-darkest:active {
-    color: #21183c;
-  }
-
-  .lg\:active\:text-purple-darker:active {
-    color: #382b5f;
-  }
-
-  .lg\:active\:text-purple-dark:active {
-    color: #794acf;
-  }
-
-  .lg\:active\:text-purple:active {
-    color: #9561e2;
-  }
-
-  .lg\:active\:text-purple-light:active {
-    color: #a779e9;
-  }
-
-  .lg\:active\:text-purple-lighter:active {
-    color: #d6bbfc;
-  }
-
-  .lg\:active\:text-purple-lightest:active {
-    color: #f3ebff;
-  }
-
-  .lg\:active\:text-pink-darkest:active {
-    color: #451225;
-  }
-
-  .lg\:active\:text-pink-darker:active {
-    color: #6f213f;
-  }
-
-  .lg\:active\:text-pink-dark:active {
-    color: #eb5286;
-  }
-
-  .lg\:active\:text-pink:active {
-    color: #f66d9b;
-  }
-
-  .lg\:active\:text-pink-light:active {
-    color: #fa7ea8;
-  }
-
-  .lg\:active\:text-pink-lighter:active {
-    color: #ffbbca;
-  }
-
-  .lg\:active\:text-pink-lightest:active {
-    color: #ffebef;
+  .lg\:text-xxs {
+    font-size: .25rem;
   }
 
   .lg\:text-xs {
-    font-size: .75rem;
+    font-size: .5rem;
   }
 
   .lg\:text-sm {
@@ -20906,6 +19187,18 @@ table {
 
   .lg\:text-5xl {
     font-size: 3rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .lg\:text-7xl {
+    font-size: 5rem;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
   }
 
   .lg\:italic {
@@ -21136,6 +19429,14 @@ table {
 
   .lg\:w-64 {
     width: 16rem;
+  }
+
+  .lg\:w-80 {
+    width: 80%;
+  }
+
+  .lg\:w-90 {
+    width: 90%;
   }
 
   .lg\:w-auto {
@@ -21897,330 +20198,6 @@ table {
     background-color: #ffebef;
   }
 
-  .xl\:active\:bg-transparent:active {
-    background-color: transparent;
-  }
-
-  .xl\:active\:bg-black-doubledeep:active {
-    background-color: #22292f;
-  }
-
-  .xl\:active\:bg-black-deep:active {
-    background-color: #22292f;
-  }
-
-  .xl\:active\:bg-black-base:active {
-    background-color: #22292f;
-  }
-
-  .xl\:active\:bg-black-light:active {
-    background-color: #22292f;
-  }
-
-  .xl\:active\:bg-black-doublelight:active {
-    background-color: #22292f;
-  }
-
-  .xl\:active\:bg-darkblue:active {
-    background-color: #222c2f;
-  }
-
-  .xl\:active\:bg-darkgreen:active {
-    background-color: ##222F2F;
-  }
-
-  .xl\:active\:bg-darkred:active {
-    background-color: #2f2224;
-  }
-
-  .xl\:active\:bg-black:active {
-    background-color: #22292f;
-  }
-
-  .xl\:active\:bg-grey-darkest:active {
-    background-color: #3d4852;
-  }
-
-  .xl\:active\:bg-grey-darker:active {
-    background-color: #606f7b;
-  }
-
-  .xl\:active\:bg-grey-dark:active {
-    background-color: #8795a1;
-  }
-
-  .xl\:active\:bg-grey:active {
-    background-color: #b8c2cc;
-  }
-
-  .xl\:active\:bg-grey-light:active {
-    background-color: #dae1e7;
-  }
-
-  .xl\:active\:bg-grey-lighter:active {
-    background-color: #f1f5f8;
-  }
-
-  .xl\:active\:bg-grey-lightest:active {
-    background-color: #f8fafc;
-  }
-
-  .xl\:active\:bg-white:active {
-    background-color: #fff;
-  }
-
-  .xl\:active\:bg-red-darkest:active {
-    background-color: #3b0d0c;
-  }
-
-  .xl\:active\:bg-red-darker:active {
-    background-color: #621b18;
-  }
-
-  .xl\:active\:bg-red-dark:active {
-    background-color: #cc1f1a;
-  }
-
-  .xl\:active\:bg-red:active {
-    background-color: #e3342f;
-  }
-
-  .xl\:active\:bg-red-light:active {
-    background-color: #ef5753;
-  }
-
-  .xl\:active\:bg-red-lighter:active {
-    background-color: #f9acaa;
-  }
-
-  .xl\:active\:bg-red-lightest:active {
-    background-color: #fcebea;
-  }
-
-  .xl\:active\:bg-orange-darkest:active {
-    background-color: #462a16;
-  }
-
-  .xl\:active\:bg-orange-darker:active {
-    background-color: #613b1f;
-  }
-
-  .xl\:active\:bg-orange-dark:active {
-    background-color: #de751f;
-  }
-
-  .xl\:active\:bg-orange:active {
-    background-color: #f6993f;
-  }
-
-  .xl\:active\:bg-orange-light:active {
-    background-color: #faad63;
-  }
-
-  .xl\:active\:bg-orange-lighter:active {
-    background-color: #fcd9b6;
-  }
-
-  .xl\:active\:bg-orange-lightest:active {
-    background-color: #fff5eb;
-  }
-
-  .xl\:active\:bg-yellow-darkest:active {
-    background-color: #453411;
-  }
-
-  .xl\:active\:bg-yellow-darker:active {
-    background-color: #684f1d;
-  }
-
-  .xl\:active\:bg-yellow-dark:active {
-    background-color: #f2d024;
-  }
-
-  .xl\:active\:bg-yellow:active {
-    background-color: #ffed4a;
-  }
-
-  .xl\:active\:bg-yellow-light:active {
-    background-color: #fff382;
-  }
-
-  .xl\:active\:bg-yellow-lighter:active {
-    background-color: #fff9c2;
-  }
-
-  .xl\:active\:bg-yellow-lightest:active {
-    background-color: #fcfbeb;
-  }
-
-  .xl\:active\:bg-green-darkest:active {
-    background-color: #0f2f21;
-  }
-
-  .xl\:active\:bg-green-darker:active {
-    background-color: #1a4731;
-  }
-
-  .xl\:active\:bg-green-dark:active {
-    background-color: #1f9d55;
-  }
-
-  .xl\:active\:bg-green:active {
-    background-color: #38c172;
-  }
-
-  .xl\:active\:bg-green-light:active {
-    background-color: #51d88a;
-  }
-
-  .xl\:active\:bg-green-lighter:active {
-    background-color: #a2f5bf;
-  }
-
-  .xl\:active\:bg-green-lightest:active {
-    background-color: #e3fcec;
-  }
-
-  .xl\:active\:bg-teal-darkest:active {
-    background-color: #0d3331;
-  }
-
-  .xl\:active\:bg-teal-darker:active {
-    background-color: #20504f;
-  }
-
-  .xl\:active\:bg-teal-dark:active {
-    background-color: #38a89d;
-  }
-
-  .xl\:active\:bg-teal:active {
-    background-color: #4dc0b5;
-  }
-
-  .xl\:active\:bg-teal-light:active {
-    background-color: #64d5ca;
-  }
-
-  .xl\:active\:bg-teal-lighter:active {
-    background-color: #a0f0ed;
-  }
-
-  .xl\:active\:bg-teal-lightest:active {
-    background-color: #e8fffe;
-  }
-
-  .xl\:active\:bg-blue-darkest:active {
-    background-color: #12283a;
-  }
-
-  .xl\:active\:bg-blue-darker:active {
-    background-color: #1c3d5a;
-  }
-
-  .xl\:active\:bg-blue-dark:active {
-    background-color: #2779bd;
-  }
-
-  .xl\:active\:bg-blue:active {
-    background-color: #3490dc;
-  }
-
-  .xl\:active\:bg-blue-light:active {
-    background-color: #6cb2eb;
-  }
-
-  .xl\:active\:bg-blue-lighter:active {
-    background-color: #bcdefa;
-  }
-
-  .xl\:active\:bg-blue-lightest:active {
-    background-color: #eff8ff;
-  }
-
-  .xl\:active\:bg-indigo-darkest:active {
-    background-color: #191e38;
-  }
-
-  .xl\:active\:bg-indigo-darker:active {
-    background-color: #2f365f;
-  }
-
-  .xl\:active\:bg-indigo-dark:active {
-    background-color: #5661b3;
-  }
-
-  .xl\:active\:bg-indigo:active {
-    background-color: #6574cd;
-  }
-
-  .xl\:active\:bg-indigo-light:active {
-    background-color: #7886d7;
-  }
-
-  .xl\:active\:bg-indigo-lighter:active {
-    background-color: #b2b7ff;
-  }
-
-  .xl\:active\:bg-indigo-lightest:active {
-    background-color: #e6e8ff;
-  }
-
-  .xl\:active\:bg-purple-darkest:active {
-    background-color: #21183c;
-  }
-
-  .xl\:active\:bg-purple-darker:active {
-    background-color: #382b5f;
-  }
-
-  .xl\:active\:bg-purple-dark:active {
-    background-color: #794acf;
-  }
-
-  .xl\:active\:bg-purple:active {
-    background-color: #9561e2;
-  }
-
-  .xl\:active\:bg-purple-light:active {
-    background-color: #a779e9;
-  }
-
-  .xl\:active\:bg-purple-lighter:active {
-    background-color: #d6bbfc;
-  }
-
-  .xl\:active\:bg-purple-lightest:active {
-    background-color: #f3ebff;
-  }
-
-  .xl\:active\:bg-pink-darkest:active {
-    background-color: #451225;
-  }
-
-  .xl\:active\:bg-pink-darker:active {
-    background-color: #6f213f;
-  }
-
-  .xl\:active\:bg-pink-dark:active {
-    background-color: #eb5286;
-  }
-
-  .xl\:active\:bg-pink:active {
-    background-color: #f66d9b;
-  }
-
-  .xl\:active\:bg-pink-light:active {
-    background-color: #fa7ea8;
-  }
-
-  .xl\:active\:bg-pink-lighter:active {
-    background-color: #ffbbca;
-  }
-
-  .xl\:active\:bg-pink-lightest:active {
-    background-color: #ffebef;
-  }
-
   .xl\:bg-bottom {
     background-position: bottom;
   }
@@ -22933,330 +20910,6 @@ table {
     border-color: #ffebef;
   }
 
-  .xl\:active\:border-transparent:active {
-    border-color: transparent;
-  }
-
-  .xl\:active\:border-black-doubledeep:active {
-    border-color: #22292f;
-  }
-
-  .xl\:active\:border-black-deep:active {
-    border-color: #22292f;
-  }
-
-  .xl\:active\:border-black-base:active {
-    border-color: #22292f;
-  }
-
-  .xl\:active\:border-black-light:active {
-    border-color: #22292f;
-  }
-
-  .xl\:active\:border-black-doublelight:active {
-    border-color: #22292f;
-  }
-
-  .xl\:active\:border-darkblue:active {
-    border-color: #222c2f;
-  }
-
-  .xl\:active\:border-darkgreen:active {
-    border-color: ##222F2F;
-  }
-
-  .xl\:active\:border-darkred:active {
-    border-color: #2f2224;
-  }
-
-  .xl\:active\:border-black:active {
-    border-color: #22292f;
-  }
-
-  .xl\:active\:border-grey-darkest:active {
-    border-color: #3d4852;
-  }
-
-  .xl\:active\:border-grey-darker:active {
-    border-color: #606f7b;
-  }
-
-  .xl\:active\:border-grey-dark:active {
-    border-color: #8795a1;
-  }
-
-  .xl\:active\:border-grey:active {
-    border-color: #b8c2cc;
-  }
-
-  .xl\:active\:border-grey-light:active {
-    border-color: #dae1e7;
-  }
-
-  .xl\:active\:border-grey-lighter:active {
-    border-color: #f1f5f8;
-  }
-
-  .xl\:active\:border-grey-lightest:active {
-    border-color: #f8fafc;
-  }
-
-  .xl\:active\:border-white:active {
-    border-color: #fff;
-  }
-
-  .xl\:active\:border-red-darkest:active {
-    border-color: #3b0d0c;
-  }
-
-  .xl\:active\:border-red-darker:active {
-    border-color: #621b18;
-  }
-
-  .xl\:active\:border-red-dark:active {
-    border-color: #cc1f1a;
-  }
-
-  .xl\:active\:border-red:active {
-    border-color: #e3342f;
-  }
-
-  .xl\:active\:border-red-light:active {
-    border-color: #ef5753;
-  }
-
-  .xl\:active\:border-red-lighter:active {
-    border-color: #f9acaa;
-  }
-
-  .xl\:active\:border-red-lightest:active {
-    border-color: #fcebea;
-  }
-
-  .xl\:active\:border-orange-darkest:active {
-    border-color: #462a16;
-  }
-
-  .xl\:active\:border-orange-darker:active {
-    border-color: #613b1f;
-  }
-
-  .xl\:active\:border-orange-dark:active {
-    border-color: #de751f;
-  }
-
-  .xl\:active\:border-orange:active {
-    border-color: #f6993f;
-  }
-
-  .xl\:active\:border-orange-light:active {
-    border-color: #faad63;
-  }
-
-  .xl\:active\:border-orange-lighter:active {
-    border-color: #fcd9b6;
-  }
-
-  .xl\:active\:border-orange-lightest:active {
-    border-color: #fff5eb;
-  }
-
-  .xl\:active\:border-yellow-darkest:active {
-    border-color: #453411;
-  }
-
-  .xl\:active\:border-yellow-darker:active {
-    border-color: #684f1d;
-  }
-
-  .xl\:active\:border-yellow-dark:active {
-    border-color: #f2d024;
-  }
-
-  .xl\:active\:border-yellow:active {
-    border-color: #ffed4a;
-  }
-
-  .xl\:active\:border-yellow-light:active {
-    border-color: #fff382;
-  }
-
-  .xl\:active\:border-yellow-lighter:active {
-    border-color: #fff9c2;
-  }
-
-  .xl\:active\:border-yellow-lightest:active {
-    border-color: #fcfbeb;
-  }
-
-  .xl\:active\:border-green-darkest:active {
-    border-color: #0f2f21;
-  }
-
-  .xl\:active\:border-green-darker:active {
-    border-color: #1a4731;
-  }
-
-  .xl\:active\:border-green-dark:active {
-    border-color: #1f9d55;
-  }
-
-  .xl\:active\:border-green:active {
-    border-color: #38c172;
-  }
-
-  .xl\:active\:border-green-light:active {
-    border-color: #51d88a;
-  }
-
-  .xl\:active\:border-green-lighter:active {
-    border-color: #a2f5bf;
-  }
-
-  .xl\:active\:border-green-lightest:active {
-    border-color: #e3fcec;
-  }
-
-  .xl\:active\:border-teal-darkest:active {
-    border-color: #0d3331;
-  }
-
-  .xl\:active\:border-teal-darker:active {
-    border-color: #20504f;
-  }
-
-  .xl\:active\:border-teal-dark:active {
-    border-color: #38a89d;
-  }
-
-  .xl\:active\:border-teal:active {
-    border-color: #4dc0b5;
-  }
-
-  .xl\:active\:border-teal-light:active {
-    border-color: #64d5ca;
-  }
-
-  .xl\:active\:border-teal-lighter:active {
-    border-color: #a0f0ed;
-  }
-
-  .xl\:active\:border-teal-lightest:active {
-    border-color: #e8fffe;
-  }
-
-  .xl\:active\:border-blue-darkest:active {
-    border-color: #12283a;
-  }
-
-  .xl\:active\:border-blue-darker:active {
-    border-color: #1c3d5a;
-  }
-
-  .xl\:active\:border-blue-dark:active {
-    border-color: #2779bd;
-  }
-
-  .xl\:active\:border-blue:active {
-    border-color: #3490dc;
-  }
-
-  .xl\:active\:border-blue-light:active {
-    border-color: #6cb2eb;
-  }
-
-  .xl\:active\:border-blue-lighter:active {
-    border-color: #bcdefa;
-  }
-
-  .xl\:active\:border-blue-lightest:active {
-    border-color: #eff8ff;
-  }
-
-  .xl\:active\:border-indigo-darkest:active {
-    border-color: #191e38;
-  }
-
-  .xl\:active\:border-indigo-darker:active {
-    border-color: #2f365f;
-  }
-
-  .xl\:active\:border-indigo-dark:active {
-    border-color: #5661b3;
-  }
-
-  .xl\:active\:border-indigo:active {
-    border-color: #6574cd;
-  }
-
-  .xl\:active\:border-indigo-light:active {
-    border-color: #7886d7;
-  }
-
-  .xl\:active\:border-indigo-lighter:active {
-    border-color: #b2b7ff;
-  }
-
-  .xl\:active\:border-indigo-lightest:active {
-    border-color: #e6e8ff;
-  }
-
-  .xl\:active\:border-purple-darkest:active {
-    border-color: #21183c;
-  }
-
-  .xl\:active\:border-purple-darker:active {
-    border-color: #382b5f;
-  }
-
-  .xl\:active\:border-purple-dark:active {
-    border-color: #794acf;
-  }
-
-  .xl\:active\:border-purple:active {
-    border-color: #9561e2;
-  }
-
-  .xl\:active\:border-purple-light:active {
-    border-color: #a779e9;
-  }
-
-  .xl\:active\:border-purple-lighter:active {
-    border-color: #d6bbfc;
-  }
-
-  .xl\:active\:border-purple-lightest:active {
-    border-color: #f3ebff;
-  }
-
-  .xl\:active\:border-pink-darkest:active {
-    border-color: #451225;
-  }
-
-  .xl\:active\:border-pink-darker:active {
-    border-color: #6f213f;
-  }
-
-  .xl\:active\:border-pink-dark:active {
-    border-color: #eb5286;
-  }
-
-  .xl\:active\:border-pink:active {
-    border-color: #f66d9b;
-  }
-
-  .xl\:active\:border-pink-light:active {
-    border-color: #fa7ea8;
-  }
-
-  .xl\:active\:border-pink-lighter:active {
-    border-color: #ffbbca;
-  }
-
-  .xl\:active\:border-pink-lightest:active {
-    border-color: #ffebef;
-  }
-
   .xl\:rounded-none {
     border-radius: 0;
   }
@@ -23271,6 +20924,14 @@ table {
 
   .xl\:rounded-lg {
     border-radius: .5rem;
+  }
+
+  .xl\:rounded-xl {
+    border-radius: .75rem;
+  }
+
+  .xl\:rounded-xxl {
+    border-radius: 1rem;
   }
 
   .xl\:rounded-full {
@@ -23357,6 +21018,46 @@ table {
     border-bottom-left-radius: .5rem;
   }
 
+  .xl\:rounded-t-xl {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+  }
+
+  .xl\:rounded-r-xl {
+    border-top-right-radius: .75rem;
+    border-bottom-right-radius: .75rem;
+  }
+
+  .xl\:rounded-b-xl {
+    border-bottom-right-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .xl\:rounded-l-xl {
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+  }
+
+  .xl\:rounded-t-xxl {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .xl\:rounded-r-xxl {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .xl\:rounded-b-xxl {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .xl\:rounded-l-xxl {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
   .xl\:rounded-t-full {
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
@@ -23441,6 +21142,38 @@ table {
     border-bottom-left-radius: .5rem;
   }
 
+  .xl\:rounded-tl-xl {
+    border-top-left-radius: .75rem;
+  }
+
+  .xl\:rounded-tr-xl {
+    border-top-right-radius: .75rem;
+  }
+
+  .xl\:rounded-br-xl {
+    border-bottom-right-radius: .75rem;
+  }
+
+  .xl\:rounded-bl-xl {
+    border-bottom-left-radius: .75rem;
+  }
+
+  .xl\:rounded-tl-xxl {
+    border-top-left-radius: 1rem;
+  }
+
+  .xl\:rounded-tr-xxl {
+    border-top-right-radius: 1rem;
+  }
+
+  .xl\:rounded-br-xxl {
+    border-bottom-right-radius: 1rem;
+  }
+
+  .xl\:rounded-bl-xxl {
+    border-bottom-left-radius: 1rem;
+  }
+
   .xl\:rounded-tl-full {
     border-top-left-radius: 9999px;
   }
@@ -23481,8 +21214,16 @@ table {
     border-width: 2px;
   }
 
+  .xl\:border-3 {
+    border-width: 3px;
+  }
+
   .xl\:border-4 {
     border-width: 4px;
+  }
+
+  .xl\:border-6 {
+    border-width: 6px;
   }
 
   .xl\:border-8 {
@@ -23525,6 +21266,22 @@ table {
     border-left-width: 2px;
   }
 
+  .xl\:border-t-3 {
+    border-top-width: 3px;
+  }
+
+  .xl\:border-r-3 {
+    border-right-width: 3px;
+  }
+
+  .xl\:border-b-3 {
+    border-bottom-width: 3px;
+  }
+
+  .xl\:border-l-3 {
+    border-left-width: 3px;
+  }
+
   .xl\:border-t-4 {
     border-top-width: 4px;
   }
@@ -23539,6 +21296,22 @@ table {
 
   .xl\:border-l-4 {
     border-left-width: 4px;
+  }
+
+  .xl\:border-t-6 {
+    border-top-width: 6px;
+  }
+
+  .xl\:border-r-6 {
+    border-right-width: 6px;
+  }
+
+  .xl\:border-b-6 {
+    border-bottom-width: 6px;
+  }
+
+  .xl\:border-l-6 {
+    border-left-width: 6px;
   }
 
   .xl\:border-t-8 {
@@ -23792,11 +21565,11 @@ table {
   }
 
   .xl\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Open Sans, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .xl\:font-serif {
-    font-family: Georgia, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, serif;
+    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .xl\:font-mono {
@@ -23875,42 +21648,6 @@ table {
     font-weight: 900;
   }
 
-  .xl\:active\:font-hairline:active {
-    font-weight: 100;
-  }
-
-  .xl\:active\:font-thin:active {
-    font-weight: 200;
-  }
-
-  .xl\:active\:font-light:active {
-    font-weight: 300;
-  }
-
-  .xl\:active\:font-normal:active {
-    font-weight: 400;
-  }
-
-  .xl\:active\:font-medium:active {
-    font-weight: 500;
-  }
-
-  .xl\:active\:font-semibold:active {
-    font-weight: 600;
-  }
-
-  .xl\:active\:font-bold:active {
-    font-weight: 700;
-  }
-
-  .xl\:active\:font-extrabold:active {
-    font-weight: 800;
-  }
-
-  .xl\:active\:font-black:active {
-    font-weight: 900;
-  }
-
   .xl\:h-1 {
     height: .25rem;
   }
@@ -23959,8 +21696,20 @@ table {
     height: 12rem;
   }
 
+  .xl\:h-50 {
+    height: 50vh;
+  }
+
   .xl\:h-64 {
     height: 16rem;
+  }
+
+  .xl\:h-70 {
+    height: 70vh;
+  }
+
+  .xl\:h-80 {
+    height: 80vh;
   }
 
   .xl\:h-90 {
@@ -23977,6 +21726,14 @@ table {
 
   .xl\:h-full {
     height: 100%;
+  }
+
+  .xl\:h-1\/3 {
+    height: 33.3vh;
+  }
+
+  .xl\:h-2\/3 {
+    height: 66.6vh;
   }
 
   .xl\:h-screen {
@@ -24025,6 +21782,30 @@ table {
 
   .xl\:m-8 {
     margin: 2rem;
+  }
+
+  .xl\:m-10 {
+    margin: 2.5rem;
+  }
+
+  .xl\:m-12 {
+    margin: 3rem;
+  }
+
+  .xl\:m-14 {
+    margin: 3, 5rem;
+  }
+
+  .xl\:m-16 {
+    margin: 4rem;
+  }
+
+  .xl\:m-18 {
+    margin: 4, 5rem;
+  }
+
+  .xl\:m-20 {
+    margin: 5rem;
   }
 
   .xl\:m-auto {
@@ -24103,6 +21884,66 @@ table {
   .xl\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .xl\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .xl\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .xl\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .xl\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .xl\:my-14 {
+    margin-top: 3, 5rem;
+    margin-bottom: 3, 5rem;
+  }
+
+  .xl\:mx-14 {
+    margin-left: 3, 5rem;
+    margin-right: 3, 5rem;
+  }
+
+  .xl\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .xl\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .xl\:my-18 {
+    margin-top: 4, 5rem;
+    margin-bottom: 4, 5rem;
+  }
+
+  .xl\:mx-18 {
+    margin-left: 4, 5rem;
+    margin-right: 4, 5rem;
+  }
+
+  .xl\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .xl\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .xl\:my-auto {
@@ -24235,6 +22076,102 @@ table {
 
   .xl\:ml-8 {
     margin-left: 2rem;
+  }
+
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .xl\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .xl\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .xl\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .xl\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .xl\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .xl\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .xl\:ml-12 {
+    margin-left: 3rem;
+  }
+
+  .xl\:mt-14 {
+    margin-top: 3, 5rem;
+  }
+
+  .xl\:mr-14 {
+    margin-right: 3, 5rem;
+  }
+
+  .xl\:mb-14 {
+    margin-bottom: 3, 5rem;
+  }
+
+  .xl\:ml-14 {
+    margin-left: 3, 5rem;
+  }
+
+  .xl\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .xl\:mr-16 {
+    margin-right: 4rem;
+  }
+
+  .xl\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .xl\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .xl\:mt-18 {
+    margin-top: 4, 5rem;
+  }
+
+  .xl\:mr-18 {
+    margin-right: 4, 5rem;
+  }
+
+  .xl\:mb-18 {
+    margin-bottom: 4, 5rem;
+  }
+
+  .xl\:ml-18 {
+    margin-left: 4, 5rem;
+  }
+
+  .xl\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .xl\:mr-20 {
+    margin-right: 5rem;
+  }
+
+  .xl\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .xl\:ml-20 {
+    margin-left: 5rem;
   }
 
   .xl\:mt-auto {
@@ -24681,8 +22618,36 @@ table {
     padding: 2rem;
   }
 
+  .xl\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .xl\:p-12 {
+    padding: 3rem;
+  }
+
+  .xl\:p-14 {
+    padding: 3, 5rem;
+  }
+
+  .xl\:p-16 {
+    padding: 4rem;
+  }
+
+  .xl\:p-18 {
+    padding: 4, 5rem;
+  }
+
+  .xl\:p-20 {
+    padding: 5rem;
+  }
+
   .xl\:p-px {
     padding: 1px;
+  }
+
+  .xl\:p-20px {
+    padding: 20px;
   }
 
   .xl\:py-0 {
@@ -24755,6 +22720,66 @@ table {
     padding-right: 2rem;
   }
 
+  .xl\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .xl\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .xl\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .xl\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .xl\:py-14 {
+    padding-top: 3, 5rem;
+    padding-bottom: 3, 5rem;
+  }
+
+  .xl\:px-14 {
+    padding-left: 3, 5rem;
+    padding-right: 3, 5rem;
+  }
+
+  .xl\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .xl\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .xl\:py-18 {
+    padding-top: 4, 5rem;
+    padding-bottom: 4, 5rem;
+  }
+
+  .xl\:px-18 {
+    padding-left: 4, 5rem;
+    padding-right: 4, 5rem;
+  }
+
+  .xl\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .xl\:py-px {
     padding-top: 1px;
     padding-bottom: 1px;
@@ -24763,6 +22788,16 @@ table {
   .xl\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .xl\:py-20px {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .xl\:px-20px {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .xl\:pt-0 {
@@ -24877,6 +22912,102 @@ table {
     padding-left: 2rem;
   }
 
+  .xl\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .xl\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .xl\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .xl\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .xl\:pt-12 {
+    padding-top: 3rem;
+  }
+
+  .xl\:pr-12 {
+    padding-right: 3rem;
+  }
+
+  .xl\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
+  .xl\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .xl\:pt-14 {
+    padding-top: 3, 5rem;
+  }
+
+  .xl\:pr-14 {
+    padding-right: 3, 5rem;
+  }
+
+  .xl\:pb-14 {
+    padding-bottom: 3, 5rem;
+  }
+
+  .xl\:pl-14 {
+    padding-left: 3, 5rem;
+  }
+
+  .xl\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .xl\:pr-16 {
+    padding-right: 4rem;
+  }
+
+  .xl\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .xl\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .xl\:pt-18 {
+    padding-top: 4, 5rem;
+  }
+
+  .xl\:pr-18 {
+    padding-right: 4, 5rem;
+  }
+
+  .xl\:pb-18 {
+    padding-bottom: 4, 5rem;
+  }
+
+  .xl\:pl-18 {
+    padding-left: 4, 5rem;
+  }
+
+  .xl\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .xl\:pr-20 {
+    padding-right: 5rem;
+  }
+
+  .xl\:pb-20 {
+    padding-bottom: 5rem;
+  }
+
+  .xl\:pl-20 {
+    padding-left: 5rem;
+  }
+
   .xl\:pt-px {
     padding-top: 1px;
   }
@@ -24891,6 +23022,22 @@ table {
 
   .xl\:pl-px {
     padding-left: 1px;
+  }
+
+  .xl\:pt-20px {
+    padding-top: 20px;
+  }
+
+  .xl\:pr-20px {
+    padding-right: 20px;
+  }
+
+  .xl\:pb-20px {
+    padding-bottom: 20px;
+  }
+
+  .xl\:pl-20px {
+    padding-left: 20px;
   }
 
   .xl\:pointer-events-none {
@@ -25669,332 +23816,12 @@ table {
     color: #ffebef;
   }
 
-  .xl\:active\:text-transparent:active {
-    color: transparent;
-  }
-
-  .xl\:active\:text-black-doubledeep:active {
-    color: #22292f;
-  }
-
-  .xl\:active\:text-black-deep:active {
-    color: #22292f;
-  }
-
-  .xl\:active\:text-black-base:active {
-    color: #22292f;
-  }
-
-  .xl\:active\:text-black-light:active {
-    color: #22292f;
-  }
-
-  .xl\:active\:text-black-doublelight:active {
-    color: #22292f;
-  }
-
-  .xl\:active\:text-darkblue:active {
-    color: #222c2f;
-  }
-
-  .xl\:active\:text-darkgreen:active {
-    color: ##222F2F;
-  }
-
-  .xl\:active\:text-darkred:active {
-    color: #2f2224;
-  }
-
-  .xl\:active\:text-black:active {
-    color: #22292f;
-  }
-
-  .xl\:active\:text-grey-darkest:active {
-    color: #3d4852;
-  }
-
-  .xl\:active\:text-grey-darker:active {
-    color: #606f7b;
-  }
-
-  .xl\:active\:text-grey-dark:active {
-    color: #8795a1;
-  }
-
-  .xl\:active\:text-grey:active {
-    color: #b8c2cc;
-  }
-
-  .xl\:active\:text-grey-light:active {
-    color: #dae1e7;
-  }
-
-  .xl\:active\:text-grey-lighter:active {
-    color: #f1f5f8;
-  }
-
-  .xl\:active\:text-grey-lightest:active {
-    color: #f8fafc;
-  }
-
-  .xl\:active\:text-white:active {
-    color: #fff;
-  }
-
-  .xl\:active\:text-red-darkest:active {
-    color: #3b0d0c;
-  }
-
-  .xl\:active\:text-red-darker:active {
-    color: #621b18;
-  }
-
-  .xl\:active\:text-red-dark:active {
-    color: #cc1f1a;
-  }
-
-  .xl\:active\:text-red:active {
-    color: #e3342f;
-  }
-
-  .xl\:active\:text-red-light:active {
-    color: #ef5753;
-  }
-
-  .xl\:active\:text-red-lighter:active {
-    color: #f9acaa;
-  }
-
-  .xl\:active\:text-red-lightest:active {
-    color: #fcebea;
-  }
-
-  .xl\:active\:text-orange-darkest:active {
-    color: #462a16;
-  }
-
-  .xl\:active\:text-orange-darker:active {
-    color: #613b1f;
-  }
-
-  .xl\:active\:text-orange-dark:active {
-    color: #de751f;
-  }
-
-  .xl\:active\:text-orange:active {
-    color: #f6993f;
-  }
-
-  .xl\:active\:text-orange-light:active {
-    color: #faad63;
-  }
-
-  .xl\:active\:text-orange-lighter:active {
-    color: #fcd9b6;
-  }
-
-  .xl\:active\:text-orange-lightest:active {
-    color: #fff5eb;
-  }
-
-  .xl\:active\:text-yellow-darkest:active {
-    color: #453411;
-  }
-
-  .xl\:active\:text-yellow-darker:active {
-    color: #684f1d;
-  }
-
-  .xl\:active\:text-yellow-dark:active {
-    color: #f2d024;
-  }
-
-  .xl\:active\:text-yellow:active {
-    color: #ffed4a;
-  }
-
-  .xl\:active\:text-yellow-light:active {
-    color: #fff382;
-  }
-
-  .xl\:active\:text-yellow-lighter:active {
-    color: #fff9c2;
-  }
-
-  .xl\:active\:text-yellow-lightest:active {
-    color: #fcfbeb;
-  }
-
-  .xl\:active\:text-green-darkest:active {
-    color: #0f2f21;
-  }
-
-  .xl\:active\:text-green-darker:active {
-    color: #1a4731;
-  }
-
-  .xl\:active\:text-green-dark:active {
-    color: #1f9d55;
-  }
-
-  .xl\:active\:text-green:active {
-    color: #38c172;
-  }
-
-  .xl\:active\:text-green-light:active {
-    color: #51d88a;
-  }
-
-  .xl\:active\:text-green-lighter:active {
-    color: #a2f5bf;
-  }
-
-  .xl\:active\:text-green-lightest:active {
-    color: #e3fcec;
-  }
-
-  .xl\:active\:text-teal-darkest:active {
-    color: #0d3331;
-  }
-
-  .xl\:active\:text-teal-darker:active {
-    color: #20504f;
-  }
-
-  .xl\:active\:text-teal-dark:active {
-    color: #38a89d;
-  }
-
-  .xl\:active\:text-teal:active {
-    color: #4dc0b5;
-  }
-
-  .xl\:active\:text-teal-light:active {
-    color: #64d5ca;
-  }
-
-  .xl\:active\:text-teal-lighter:active {
-    color: #a0f0ed;
-  }
-
-  .xl\:active\:text-teal-lightest:active {
-    color: #e8fffe;
-  }
-
-  .xl\:active\:text-blue-darkest:active {
-    color: #12283a;
-  }
-
-  .xl\:active\:text-blue-darker:active {
-    color: #1c3d5a;
-  }
-
-  .xl\:active\:text-blue-dark:active {
-    color: #2779bd;
-  }
-
-  .xl\:active\:text-blue:active {
-    color: #3490dc;
-  }
-
-  .xl\:active\:text-blue-light:active {
-    color: #6cb2eb;
-  }
-
-  .xl\:active\:text-blue-lighter:active {
-    color: #bcdefa;
-  }
-
-  .xl\:active\:text-blue-lightest:active {
-    color: #eff8ff;
-  }
-
-  .xl\:active\:text-indigo-darkest:active {
-    color: #191e38;
-  }
-
-  .xl\:active\:text-indigo-darker:active {
-    color: #2f365f;
-  }
-
-  .xl\:active\:text-indigo-dark:active {
-    color: #5661b3;
-  }
-
-  .xl\:active\:text-indigo:active {
-    color: #6574cd;
-  }
-
-  .xl\:active\:text-indigo-light:active {
-    color: #7886d7;
-  }
-
-  .xl\:active\:text-indigo-lighter:active {
-    color: #b2b7ff;
-  }
-
-  .xl\:active\:text-indigo-lightest:active {
-    color: #e6e8ff;
-  }
-
-  .xl\:active\:text-purple-darkest:active {
-    color: #21183c;
-  }
-
-  .xl\:active\:text-purple-darker:active {
-    color: #382b5f;
-  }
-
-  .xl\:active\:text-purple-dark:active {
-    color: #794acf;
-  }
-
-  .xl\:active\:text-purple:active {
-    color: #9561e2;
-  }
-
-  .xl\:active\:text-purple-light:active {
-    color: #a779e9;
-  }
-
-  .xl\:active\:text-purple-lighter:active {
-    color: #d6bbfc;
-  }
-
-  .xl\:active\:text-purple-lightest:active {
-    color: #f3ebff;
-  }
-
-  .xl\:active\:text-pink-darkest:active {
-    color: #451225;
-  }
-
-  .xl\:active\:text-pink-darker:active {
-    color: #6f213f;
-  }
-
-  .xl\:active\:text-pink-dark:active {
-    color: #eb5286;
-  }
-
-  .xl\:active\:text-pink:active {
-    color: #f66d9b;
-  }
-
-  .xl\:active\:text-pink-light:active {
-    color: #fa7ea8;
-  }
-
-  .xl\:active\:text-pink-lighter:active {
-    color: #ffbbca;
-  }
-
-  .xl\:active\:text-pink-lightest:active {
-    color: #ffebef;
+  .xl\:text-xxs {
+    font-size: .25rem;
   }
 
   .xl\:text-xs {
-    font-size: .75rem;
+    font-size: .5rem;
   }
 
   .xl\:text-sm {
@@ -26027,6 +23854,18 @@ table {
 
   .xl\:text-5xl {
     font-size: 3rem;
+  }
+
+  .xl\:text-6xl {
+    font-size: 4rem;
+  }
+
+  .xl\:text-7xl {
+    font-size: 5rem;
+  }
+
+  .xl\:text-8xl {
+    font-size: 6rem;
   }
 
   .xl\:italic {
@@ -26257,6 +24096,14 @@ table {
 
   .xl\:w-64 {
     width: 16rem;
+  }
+
+  .xl\:w-80 {
+    width: 80%;
+  }
+
+  .xl\:w-90 {
+    width: 90%;
   }
 
   .xl\:w-auto {
