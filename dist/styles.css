@@ -633,6 +633,82 @@ table {
   }
 }
 
+.tabs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+  border-width: 1px;
+  border-color: #fff;
+  box-shadow: 0 48px 80px -32px rgba(0, 0, 0, .3);
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+}
+
+.label {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: transparent;
+  border-top-width: 1px;
+  border-color: #fff;
+  color: #38c172;
+  font-weight: 700;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .1s, color .1s;
+}
+
+.label:hover {
+  background-color: #b8c2cc;
+}
+
+.label:active {
+  background-color: #dae1e7;
+}
+
+.input:focus + .label {
+  box-shadow: inset 0px 0px 0px 3px #2aa1c0;
+  z-index: 1;
+}
+
+.input:checked + .label {
+  background-color: transparent;
+  color: #fff;
+  font-size: 2.25rem;
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+
+@media (min-width: 600px) {
+  .label {
+    width: auto;
+  }
+}
+
+.panel {
+  display: none;
+  padding: 20px 30px 30px;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .panel {
+    order: 99;
+  }
+}
+
+.input:checked + .label + .panel {
+  display: block;
+}
+
 .list-reset {
   list-style: none;
   padding: 0;
