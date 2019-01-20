@@ -1,8 +1,103 @@
-@tailwind preflight;
+:root{
+  --black-d : #0c0c0c;
+  --blue-d : #4F1AFF;
+}
 
+/*==============================================
+ Preflight : node_modules/tailwindcss/css/preflight.css
+ ===============================================*/
+@tailwind preflight;
+html{
+  font-family: 'Sarabun', 'Open Sans' sans-serif;
+  
+}
+
+h1, h2, h3{
+  font-family: 'Sarabun', sans-serif;
+}
+h1 {
+  @apply text-2xl leading-none;
+}
+
+h2 {
+  @apply text-xl  py-2;
+}
+h3{
+  @apply text-base;
+}
+h4{
+  @apply text-lg;
+}
+h5{
+  @apply text-sm;
+}
+h6{
+  @apply text-sm;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  @apply text-sm;
+}
+
+@screen md {
+  h1 {
+    @apply text-6xl;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+  h3{
+    @apply text-2xl;
+  }
+  h4{
+    @apply text-xl;
+  }
+  h5{
+    @apply text-lg;
+  }
+  h6{
+    @apply text-base;
+  }
+}
+
+/*==============================================
+ Components
+ ===============================================*/
 @tailwind components;
 
 
+/*==============================================
+// 1. General Layout
+*/
+
+/*==============================================
+// 2. Naviagtion
+*/
+
+/*==============================================
+// 3. Why
+*/
+
+/*==============================================
+// 4. How
+*/
+
+/*==============================================
+// 5. What
+*/
+
+/*==============================================
+// 6. Testimonials
+*/
+
+/*==============================================
+// 7. Contact
+*/
+
+
+/*==============================================
+// 8. Footer
+*/
 .tabs {
   @apply w-full flex flex-wrap bg-transparent border border-white;
   box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
@@ -63,6 +158,9 @@
   display: block;
 }
 
+/*==============================================
+ Utilities
+ ===============================================*/
 @tailwind utilities;
 /*Utility*/
 .active{
