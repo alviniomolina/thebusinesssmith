@@ -4,51 +4,92 @@
 		<title>the Business Smith</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link href="styles.css" rel="stylesheet">
+		<link href="/src/styles.css" rel="stylesheet">
 		<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 	</head>
-	<body class="bg-black" id="top">
+
+	<!-- 
+
+		DESIGN:
+		- Van donker naar licht, dat is precies wat ik doe, ik begeletd je van donker naar licht: 
+			- why : de magic mn blackbox >> boost your essence 10x
+			- how : de toolbox 
+			- what: wat je krijgen kan (de diensten)
+			- Testimonials : licht en hoop geven en bevestiging : mat blad groen / licht blauw
+		
+		TODO:
+		- Koppelen van app.js in de broncode  via webpack code
+
+		Bronnen :
+		- https://www.amie-chen.com/ > inspiratie design
+
+		- Waterfall navigatie : https://www.codeseek.co/preview/OOKPzG
+
+
+	-->
+
+
+	<body class="bg-darkblue text-white" id="top">
 	
 	<!-- Navigation-->
-	<div class="flex flex-col text-center sm:justify-between sm:flex-row  sm:text-left sm:items-baseline sticky pin-t pin-l bg-black opacity-75 shadow py-4 px-6">
+	<div class="flex flex-col w-full sm:flex-row sm:items-baseline sm:justify-between sticky pin-t pin-l py-4 px-6 bg-darkblue"  data-gumshoe-header data-scroll-header>
 		
-		<!-- Logo -->
-		<div class="mb-2 sm:mb-0">
-			<a class="text-purple hover:text-green font-bold text-2xl no-underline" href="#top">theBusinessSmith</a>
+		<div class="flex justify-between text-center" id="hamburger-wrapper__active">
+			<!-- Logo -->
+			<div class="mb-2 sm:mb-0">
+				<a class="text-purple hover:text-green font-bold text-2xl no-underline" href="#top">theBusinessSmith</a>
+			</div>
+
+			<!-- Hamburger Menu -->
+			<div class="block sm:hidden pr-3">
+				<button class="navbar-burger"><i class="fas fa-bars fa-lg"></i></button>
+			</div>
 		</div>
 
-		<!-- Hamburger Menu -->
-		<div class="md:hidden pr-3" id="mobile-nav-trigger">
-			<div class="toggle p-2 block"><span></span></div>
-		</div>
-		
 		<!-- Navigatie Items-->
-		<nav class="relative">
-			<a class="data-scroll border-t md:border-0 block md:inline no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green text-lg" href="#what">what</a>
-			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#why">why</a>
-			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#when">when</a>
-			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#who">who</a>
-			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#how">how</a>
-			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#">highlights</a>
-			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#">testimonials</a>
-			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#">about</a>
-			<a class="data-scroll border-t md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-purple-dark hover:text-green" href="#">contact</a>
-
+		<nav class="text-center sm:flex sm:w-auto hidden" id="main-nav">
+			<ul class="list-reset sm:flex" data-gumshoe>
+				<li class="mx-2">
+					<a  class=" active md:border-0 block md:inline no-underline py-4 md:py-0 ml-2 hover:text-green active text-white text-lg" href="#why">why</a>
+				</li>
+				<li class="mx-2">
+					<a  class=" md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-white hover:text-green " href="#how">how</a>
+				</li>
+				<li class="mx-2">
+					<a  class=" md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-white hover:text-green " href="#what">what</a>
+				</li>
+				<li class="mx-2">
+					<a  class=" md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-white hover:text-green " href="#testimonials">testimonials</a>
+				</li>
+				<li class="mx-2">
+					<a class=" md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-white hover:text-green " href="#about">about</a>
+				</li>
+				<li class="mx-2 -mt-1">
+					<a  class="" href="#"><button class="px-6 py-1 mx-4 bg-blue-darker hover:bg-blue-darker text-white hover:text-green border-b-4 border-blue-dark hover:border-purple rounded">contact</button></a>
+				</li>
+			</ul>
 		</nav>
 	</div>
 
     <!-- Hero-->
-    <div class="min-h-screen flex items-center justify-center" id="hero">
-      <div class="w-5/6">
-      <h1 class="clearfix w-full text-5xl text-purple font-sans">the Black Smith</h1>
-      
-      <h2 class="w-full text-4xl text-green font-sans">strategy meets operations</h2>
+    <div class="min-h-screen flex items-center justify-center bg-darkblue" id="why">
+		<div class="w-5/6">
+		<h1 class="clearfix w-full text-4xl text-white ">the Business Smith</h1>
+		
+		<h2 class="w-full text-4xl text-green-dark font-serif italic pt-2 pb-2
+		">
+			get your essence 10x bolder
+		</h2>
+		
+		<h3 class="w-full text-xl text-white font-thin">
+			strategy meets operations
+		</h3>
     </div>
 	</div>
 	
-	<!-- What-->
-    <section class="h-90 bg-white items-center justify-center py-8" id="what">
-		<h1 class="text-6xl text-center py-4">What does I do</h1>
+	<!-- Why
+    <section class="h-90 items-center justify-center py-8" >
+		<h1 class="text-6xl text-center py-4">Why</h1>
 		<p class="w-1/2 py-4 mx-auto">
 			doet business strategie samen brengen met business operations.
 			zo is elk advies meteen toepasbaar.
@@ -58,59 +99,101 @@
 			focus op wat nu nodig is de 3 jaren doelstelling te bereiken
 			alles heeft een goede pos nodig!!
     	</p>
-	</section>
+	</section>-->
 	
-	<!-- Why-->
-	<section class="h-90 bg-black items-center justify-center py-8" id="why">
-		<h1 class="text-6xl text-center text-green py-4">Why me</h1>
-		<p class="w-1/2 py-4 mx-auto text-green">
-			doet business strategie samen brengen met business operations.
-			zo is elk advies meteen toepasbaar.
-			grootste kracht is out of te box denken, nieuwe relaties leggen en
-			met bestaande elemeneten nieuwe verbindingen maken - lateraal denken
-			elke ondernemer heeft een passie, soms door omstandigheden raakt deze ondergesneeuwd, echt advies raakt deze passie, hierdoor kan goed al het nu nog niet nodige geschrapt worden
-			focus op wat nu nodig is de 3 jaren doelstelling te bereiken
-			alles heeft een goede pos nodig!!
-		</p>
+	<!-- How-->
+	<section class="min-h-screen items-center justify-center py-8 mt-4 bg-black" id="how">
+		<div class="w-5/6 mx-auto">
+			<h1 class="text-6xl text-green py-4">How</h1>
+			<p class="w-1/2 py-4">
+				- translate your essence, you reason why your doing this all.
+				- get to core.
+			</p>
+		</div>
 	</section>
 
-	<!-- When-->
-    <section class="h-90 bg-white items-center justify-center py-8" id="when">
-		<h1 class="text-6xl text-center py-4">When call for me</h1>
-		<p class="w-1/2 py-4 mx-auto">
-			doet business strategie samen brengen met business operations.
-			zo is elk advies meteen toepasbaar.
-			grootste kracht is out of te box denken, nieuwe relaties leggen en
-			met bestaande elemeneten nieuwe verbindingen maken - lateraal denken
-			elke ondernemer heeft een passie, soms door omstandigheden raakt deze ondergesneeuwd, echt advies raakt deze passie, hierdoor kan goed al het nu nog niet nodige geschrapt worden
-			focus op wat nu nodig is de 3 jaren doelstelling te bereiken
-			alles heeft een goede pos nodig!!
-		</p>
+	<!-- What-->
+	<section class="min-h-screen items-center justify-center py-8" id="what">
+		<div class="w-5/6 mx-auto">
+			<h1 class="text-6xl text-green py-4">What</h1>
+			<p class="w-1/2 py-4 ">
+				business advies <br>
+				business coaching <br>
+				idea to product - build your website, your POS' <br>
+			</p>
+		</div>
 	</section>
 		
-	<!-- Who-->
-	<section class="h-90 bg-black items-center justify-center py-8" id="who">
-		<h1 class="text-6xl text-center py-4 text-green">Who needs me</h1>
-		<p class="w-1/2 py-4 mx-auto text-green">
-			doet business strategie samen brengen met business operations.
-			zo is elk advies meteen toepasbaar.
-			grootste kracht is out of te box denken, nieuwe relaties leggen en
-			met bestaande elemeneten nieuwe verbindingen maken - lateraal denken
-			elke ondernemer heeft een passie, soms door omstandigheden raakt deze ondergesneeuwd, echt advies raakt deze passie, hierdoor kan goed al het nu nog niet nodige geschrapt worden
-			focus op wat nu nodig is de 3 jaren doelstelling te bereiken
-			alles heeft een goede pos nodig!!
-		</p>
+	<!-- Testimonials-->
+	<section class="min-h-screen  items-center justify-center py-8 bg-black" id="testimonials">
+		<div class="w-5/6 mx-auto">
+			<h1 class="text-6xl py-4 text-green">highlights</h1>
+
+			<div class="flex  row border border-white">
+				<div class="w-1/4">
+				<button class="btn flex-1 h-12 w-48 border border-white text-white hover:bg-green">apps</button>
+				<button class="btn flex-1 h-12 w-48 border border-white text-white">prototype</button>
+				<button class="btn flex-1 h-12 w-48 border border-white text-white">cultuur</button>
+				<button class="btn flex-1 h-12 w-48 border border-white text-white">team</button>
+				<button class="btn flex-1 h-12 w-48 border border-white text-white">product</button>
+				<button class="btn flex-1 h-12 w-48 border border-white text-white">concept</button>
+				</div>
+				<div class="w-3/4">
+					<p class="w-1/2 py-4">
+						doet business strategie samen brengen met business operations.
+						zo is elk advies meteen toepasbaar.
+						grootste kracht is out of te box denken, nieuwe relaties leggen en
+						met bestaande elemeneten nieuwe verbindingen maken - lateraal denken
+						elke ondernemer heeft een passie, soms door omstandigheden raakt deze ondergesneeuwd, echt advies raakt deze passie, hierdoor kan goed al het nu nog niet nodige geschrapt worden
+						focus op wat nu nodig is de 3 jaren doelstelling te bereiken
+						alles heeft een goede pos nodig!!
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About-->
+	<section class="min-h-screen items-center justify-center py-8 bg-black" id="about">
+		<div class="w-5/6 mx-auto">
+			<h1 class="text-6xl py-4 text-green">about me</h1>
+			<p class="w-1/2 py-4 ">
+				persoon <br>
+				lessons learned <br>
+				getting the job done <br>
+				linkedin <br>
+			</p>
+			
+			
+			<p class="w-1/2 py-4">
+				doet business strategie samen brengen met business operations.
+				zo is elk advies meteen toepasbaar.
+				grootste kracht is out of te box denken, nieuwe relaties leggen en
+				met bestaande elemeneten nieuwe verbindingen maken - lateraal denken
+				elke ondernemer heeft een passie, soms door omstandigheden raakt deze ondergesneeuwd, echt advies raakt deze passie, hierdoor kan goed al het nu nog niet nodige geschrapt worden
+				focus op wat nu nodig is de 3 jaren doelstelling te bereiken
+				alles heeft een goede pos nodig!!
+			</p>
+		</div>
 	</section>
     
 	<script type="text/javascript" src="main.js"></script>
-	<script src="app.js" async defer></script>
+	<script src="src/app.js"></script>
+	<script src="src/nav.js" ></script>
+	<script src="/assets/hamburger-menu-master/scripts/nav.js"></script>
 	<script src="/assets/smooth-scroll-master/dist/smooth-scroll.polyfills.js"></script>
+	<script src="/assets/gumshoe-master/dist/js/gumshoe.min.js"></script>
 	
 	<script>
 		var scroll = new SmoothScroll('a[href*="#"]', {
-			speed: 1500
+			speed: 2000,
+			offset: 20
+		});
+		gumshoe.init({
+			offset: 21
 		});
 	</script>
+
 
 
 </body>

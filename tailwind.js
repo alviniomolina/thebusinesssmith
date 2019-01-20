@@ -45,6 +45,20 @@ View the full documentation at https://tailwindcss.com.
 
 let colors = {
   'transparent': 'transparent',
+  'black-doubledeep': '#22292f',
+  'black-deep': '#22292f',
+  'black-base': '#22292f',
+  'black-light': '#22292f',
+  'black-doublelight': '#22292f',
+  'darkblue': '#222C2F',
+  'darkgreen': '##222F2F',
+  'darkred': '#2F2224',
+  'black': '#080808',
+ 
+  
+  
+  
+
 
   'black': '#22292f',
   'grey-darkest': '#3d4852',
@@ -208,6 +222,7 @@ module.exports = {
       'sans-serif',
     ],
     'serif': [
+      'Georgia',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',
@@ -216,7 +231,6 @@ module.exports = {
       'DejaVu Serif',
       'Bitstream Vera Serif',
       'Liberation Serif',
-      'Georgia',
       'serif',
     ],
     'mono': [
@@ -839,11 +853,11 @@ module.exports = {
   modules: {
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
-    backgroundColors: ['responsive', 'hover'],
+    backgroundColors: ['responsive', 'hover', 'active'],
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
-    borderColors: ['responsive', 'hover'],
+    borderColors: ['responsive', 'hover', 'active'],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
     borderWidths: ['responsive'],
@@ -852,7 +866,7 @@ module.exports = {
     flexbox: ['responsive'],
     float: ['responsive'],
     fonts: ['responsive'],
-    fontWeights: ['responsive', 'hover'],
+    fontWeights: ['responsive', 'hover', 'active'],
     height: ['responsive'],
     leading: ['responsive'],
     lists: ['responsive'],
@@ -872,7 +886,7 @@ module.exports = {
     svgFill: [],
     svgStroke: [],
     textAlign: ['responsive'],
-    textColors: ['responsive', 'hover'],
+    textColors: ['responsive', 'hover', 'active'],
     textSizes: ['responsive'],
     textStyle: ['responsive', 'hover'],
     tracking: ['responsive'],
