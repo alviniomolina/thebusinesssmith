@@ -2,6 +2,67 @@
 
 @tailwind components;
 
+
+.tabs {
+  @apply w-full flex flex-wrap bg-transparent border border-white;
+  box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+}
+
+.label {
+  @apply 
+  w-full
+  py-4 px-8
+  bg-transparent border-t border-white
+  text-green font-bold font-semibold;
+  cursor: pointer;
+  transition: background 0.1s, color 0.1s;
+}
+
+.label:hover {
+  @apply bg-grey;
+}
+
+.label:active {
+  @apply bg-grey-light;
+}
+
+.input:focus + .label {
+  box-shadow: inset 0px 0px 0px 3px #2aa1c0;
+  z-index: 1;
+}
+
+.input:checked + .label {
+  @apply bg-transparent text-white text-4xl pt-8 pb-0;
+}
+
+@media (min-width: 600px) {
+  .label {
+    @apply w-auto;
+  }
+}
+
+.panel {
+  display: none;
+  padding: 20px 30px 30px;
+  @apply bg-transparent text-white w-full;
+  
+}
+
+@screen sm {
+  .panel {
+    order: 99;
+  }
+}
+
+.input:checked + .label + .panel {
+  display: block;
+}
+
 @tailwind utilities;
 /*Utility*/
 .active{
