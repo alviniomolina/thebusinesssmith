@@ -7,7 +7,7 @@
 		<link href="assets/css/animate.min.css" rel="stylesheet">
 		<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Sarabun:400,600" rel="stylesheet">
-		<link href="styles.css" rel="stylesheet"></head>
+	<link href="styles.css" rel="stylesheet"></head>
 
 	<!-- 
 
@@ -20,7 +20,6 @@
 		
 		TODO:
 		- Koppelen van app.js in de broncode  via webpack code
-		- active nav item toevoegen jquery?
 
 		Bronnen :
 		- https://www.amie-chen.com/ > inspiratie design
@@ -52,7 +51,7 @@
 		<nav class="text-center sm:flex sm:w-auto hidden" id="main-nav">
 			<ul class="list-reset sm:flex" data-gumshoe>
 				<li class="mx-2">
-					<a  class="active md:border-0 block md:inline no-underline py-4 md:py-0 ml-2 hover:text-green active text-white text-lg" href="#why">why</a>
+					<a  class=" active md:border-0 block md:inline no-underline py-4 md:py-0 ml-2 hover:text-green active text-white text-lg" href="#why">why</a>
 				</li>
 				<li class="mx-2">
 					<a  class=" md:border-0 block md:inline text-lg no-underline py-4 md:py-0 ml-2 text-white hover:text-green " href="#how">how</a>
@@ -224,11 +223,28 @@
 			</p>
 		</div>
 	</section>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+	<script type="text/javascript" src="/src/main.js"></script>
 	
+	<script src="src/assets/js/smooth-scroll.polyfills.min.js"></script>
+	<script src="/src/assets/js/gumshoe.min.js"></script>
 	<script type="text/javascript" src="/src/assets/js/nav.js"></script>
 	<script type="text/javascript" src="/src/assets/js/app.js"></script>
+
+	
+
+
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]', {
+			speed: 2000,
+			offset: 20
+		});
+		gumshoe.init({
+			offset: 21
+		});
+	</script>
+
+
 
 <script type="text/javascript" src="main.js"></script></body>
 
